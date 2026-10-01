@@ -1,0 +1,7 @@
+{
+  "name": "schoolevents-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
