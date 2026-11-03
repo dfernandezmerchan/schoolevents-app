@@ -21,10 +21,24 @@ export const routes: Routes = [
           m.HomePage),
       },
       {
+        path: 'calendario',
+        loadComponent: () => import('./paginas/calendario/calendario.page').then( m =>
+          m.CalendarioPage)
+      },
+
+      {
+        path: 'miseventos',
+        loadComponent: () => import('./paginas/miseventos/miseventos.page').then( m => m.MiseventosPage)
+      },
+
+      {
         path: 'perfil',
         loadComponent: () => import('./paginas/perfil/perfil.page').then(m =>
           m.PerfilPage),
       },
+
     ],
   },
+
+
 ];
