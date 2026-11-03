@@ -37,8 +37,14 @@ export const routes: Routes = [
           m.PerfilPage),
       },
 
+      {
+        path: 'alertas',
+        loadComponent: () => import('./paginas/alertas/alertas.page').then( m => m.AlertasPage)
+      },
+
     ],
   },
+
 
 
 ];

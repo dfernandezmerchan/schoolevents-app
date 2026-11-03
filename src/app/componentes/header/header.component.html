@@ -1,0 +1,20 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+
+    <!-- LADO IZQUIERDO: Botón para volver atrás o abrir un menú -->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/app/home" text=""></ion-back-button>
+    </ion-buttons>
+
+    <!-- CENTRO: El título dinámico que cambia según la página -->
+    <ion-title>{{ titulo }}</ion-title>
+
+    <!-- LADO DERECHO: Un icono o botón que quieras en todas las páginas -->
+    <ion-buttons slot="end">
+      <ion-button routerLink="/app/perfil">
+        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>

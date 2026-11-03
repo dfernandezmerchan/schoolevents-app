@@ -8,7 +8,8 @@ import {
   water,
   calendarOutline,
   heartOutline,
-  waterOutline
+  waterOutline,
+  notificationsOutline,
 } from "ionicons/icons";
 
 @Component({
@@ -18,6 +19,6 @@ import {
 })
 export class AppComponent {
   constructor() {
-    addIcons({ bookOutline, waterOutline, pulseOutline, personOutline, water, calendarOutline, heartOutline });
+    addIcons({ bookOutline, waterOutline, pulseOutline, personOutline, water, calendarOutline, heartOutline, notificationsOutline });
   }
 }
