@@ -12,8 +12,11 @@ import {IonButton, IonContent, IonHeader, IonRouterLink, IonTitle, IonToolbar} f
 })
 export class PerfilPage {
 
-  constructor() { }
+  isEditing = false;
 
+  toggleEdit(): void {
+    this.isEditing = !this.isEditing;
+  }
 
 
 }
