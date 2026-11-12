@@ -5,6 +5,6 @@ import {HeaderComponent} from "../../componentes/header/header.component";
   selector: 'app-tabs',
   templateUrl: './tabs.page.html',
   styleUrls: ['./tabs.page.scss'],
-  imports: [IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, HeaderComponent, IonContent],
+  imports: [IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, HeaderComponent],
 })
 export class TabsPage {}

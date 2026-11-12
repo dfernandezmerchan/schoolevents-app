@@ -19,7 +19,7 @@ import {TarjetaeventoComponent} from "../componentes/tarjetaevento/tarjetaevento
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonIcon, HeaderComponent, IonSearchbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, TarjetaeventoComponent, IonSegment, IonSegmentButton, IonLabel, IonPopover],
+  imports: [IonHeader, IonToolbar, IonContent, IonButton, IonSearchbar, TarjetaeventoComponent, IonSegment, IonSegmentButton, IonLabel, IonPopover],
 })
 export class HomePage {
   constructor() {
