@@ -1,5 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} from "@ionic/angular";
+import {
+  IonAvatar,
+  IonButton,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle, IonIcon, IonItem,
+  IonLabel
+} from "@ionic/angular";
 
 @Component({
   selector: 'app-tarjetaevento',
@@ -10,7 +19,12 @@ import {IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} f
     IonCardHeader,
     IonCardTitle,
     IonCardSubtitle,
-    IonCardContent
+    IonCardContent,
+    IonButton,
+    IonLabel,
+    IonAvatar,
+    IonItem,
+    IonIcon
   ],
 })
 export class TarjetaeventoComponent  implements OnInit {
