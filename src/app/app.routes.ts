@@ -10,6 +10,10 @@ export const routes: Routes = [
     loadComponent: () => import('./paginas/login/login.page').then(m =>
       m.LoginPage),
   },
+  {
+    path: 'registro',
+    loadComponent: () => import('./paginas/registro/registro.page').then( m => m.RegistroPage)
+  },
 
   {
     path: 'app',
@@ -47,10 +51,7 @@ export const routes: Routes = [
         loadComponent: () => import('./paginas/eventodetalle/eventodetalle.page').then( m => m.EventodetallePage)
       },
 
-      {
-        path: 'registro',
-        loadComponent: () => import('./paginas/registro/registro.page').then( m => m.RegistroPage)
-      },
+
 
     ],
   },

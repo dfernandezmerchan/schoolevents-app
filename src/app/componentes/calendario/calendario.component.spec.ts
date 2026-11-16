@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';cambiados colores principales de la app
 
 import { CalendarioComponent } from './calendario.component';
 
