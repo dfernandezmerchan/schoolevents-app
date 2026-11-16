@@ -9,6 +9,7 @@ import {
   IonCardTitle, IonIcon, IonItem,
   IonLabel
 } from "@ionic/angular";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-tarjetaevento',
@@ -24,7 +25,8 @@ import {
     IonLabel,
     IonAvatar,
     IonItem,
-    IonIcon
+    IonIcon,
+    RouterLink
   ],
 })
 export class TarjetaeventoComponent  implements OnInit {

@@ -1,13 +1,60 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>miseventos</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">miseventos</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
+  <div class="contenedor-mis-eventos">
+
+    <!-- Cabecera -->
+    <div class="cabecera-pagina">
+      <h1>Mis eventos</h1>
+      <p>Todos tus planes en un mismo lugar.</p>
+    </div>
+
+    <!-- Resumen -->
+    <div class="resumen">
+
+      <div class="resumen-item">
+        <ion-icon name="calendar-outline"></ion-icon>
+
+        <div>
+          <h2>3</h2>
+          <p>Inscripciones</p>
+        </div>
+      </div>
+
+      <div class="resumen-item">
+        <ion-icon name="heart"></ion-icon>
+
+        <div>
+          <h2>4</h2>
+          <p>Favoritos</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Selector de secciones -->
+    <ion-segment value="inscripciones" mode="md">
+
+      <ion-segment-button value="inscripciones">
+        <ion-label>Inscripciones</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="favoritos">
+        <ion-label>Favoritos</ion-label>
+      </ion-segment-button>
+
+    </ion-segment>
+
+    <!-- Tarjetas de prueba -->
+    <div class="lista-eventos">
+
+      <app-tarjetaeventocomprimida></app-tarjetaeventocomprimida>
+
+      <app-tarjetaeventocomprimida></app-tarjetaeventocomprimida>
+
+    </div>
+
+  </div>
+
 </ion-content>

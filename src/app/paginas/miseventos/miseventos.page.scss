@@ -1,0 +1,94 @@
+ion-content {
+  --background: var(--ion-background-color);
+}
+
+/* CONTENEDOR */
+.contenedor-mis-eventos {
+  padding: 20px 10px;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* CABECERA */
+.cabecera-pagina {
+  padding: 0 10px;
+  margin-bottom: 22px;
+}
+
+.cabecera-pagina h1 {
+  font-size: 27px;
+  font-weight: 700;
+  color: var(--ion-text-color);
+  margin: 0;
+}
+
+.cabecera-pagina p {
+  font-size: 14px;
+  color: var(--ion-color-medium);
+  margin-top: 7px;
+}
+
+/* RESUMEN */
+.resumen {
+  display: flex;
+  gap: 12px;
+  padding: 0 10px;
+  margin-bottom: 25px;
+}
+
+.resumen-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: var(--ion-color-light);
+  border-radius: 14px;
+}
+
+.resumen-item ion-icon {
+  font-size: 27px;
+  color: var(--ion-color-primary);
+}
+
+.resumen-item:nth-child(2) ion-icon {
+  color: var(--ion-color-secondary);
+}
+
+.resumen-item h2 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: bold;
+  color: var(--ion-text-color);
+}
+
+.resumen-item p {
+  margin: 3px 0 0;
+  font-size: 11px;
+  color: var(--ion-color-medium);
+}
+
+/* SEGMENT */
+ion-segment {
+  margin: 15px 0 20px;
+  background: var(--ion-color-light);
+  border-radius: 12px;
+}
+
+ion-segment-button {
+  --indicator-color: var(--ion-color-primary);
+  --color: var(--ion-text-color);
+  --color-checked: var(--ion-color-medium);
+
+  min-height: 42px;
+  font-weight: 600;
+}
+
+/* LISTA DE EVENTOS */
+.lista-eventos {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+

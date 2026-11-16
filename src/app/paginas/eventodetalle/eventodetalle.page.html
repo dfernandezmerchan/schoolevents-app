@@ -1,0 +1,76 @@
+<app-header></app-header>
+
+<ion-content>
+
+  <div class="evento">
+
+    <!-- Título y organizador -->
+    <div class="cabecera-evento">
+
+      <div class="icono-evento">
+        A
+      </div>
+
+      <div class="datos-evento">
+        <h2>Titulo del evento</h2>
+        <p>Organizador del evento</p>
+      </div>
+
+      <ion-button fill="clear" class="boton-corazon">
+        <ion-icon name="heart-outline"></ion-icon>
+      </ion-button>
+
+    </div>
+
+    <!-- Imagen -->
+    <img
+      class="imagen-evento"
+      src="https://placehold.co/600x350"
+      alt="imagen">
+
+    <!-- Información -->
+    <div class="informacion">
+
+      <div class="fila-info">
+
+        <div>
+          <h3>Titulo del evento</h3>
+          <p>fecha y hora del evento</p>
+        </div>
+
+        <div class="lugar">
+          <ion-icon name="location"></ion-icon>
+          <span>localización del evento</span>
+        </div>
+
+      </div>
+
+      <p class="descripcion">
+        Descripción del evento
+      </p>
+
+      <!-- Botón -->
+      <ion-button expand="block" class="boton-inscribirse">
+        Inscribirse
+      </ion-button>
+
+    </div>
+
+    <!-- Pestañas -->
+    <div class="seccion-fotos">
+
+      <h3>Fotos del evento</h3>
+
+      <!-- Aquí irán las fotos -->
+      <div class ="galeria-fotos">
+        <app-fotoevento></app-fotoevento>
+        <app-fotoevento></app-fotoevento>
+        <app-fotoevento></app-fotoevento>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</ion-content>
