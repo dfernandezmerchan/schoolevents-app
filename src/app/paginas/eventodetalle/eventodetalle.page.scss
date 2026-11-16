@@ -1,0 +1,161 @@
+ion-content {
+  --background: white;
+}
+
+/* CABECERA DEL EVENTO */
+
+.cabecera-evento {
+  display: flex;
+  align-items: center;
+  padding: 18px 20px 14px;
+}
+
+.icono-evento {
+  width: 42px;
+  height: 42px;
+
+  background: #168bf5;
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.datos-evento {
+  flex: 1;
+}
+
+.datos-evento h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.datos-evento p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.boton-corazon {
+  width: 50px;
+  height: 50px;
+
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+
+  --color: #168bf5;
+
+  flex-shrink: 0;
+}
+
+.boton-corazon ion-icon {
+  font-size: 38px;
+}
+
+/* IMAGEN */
+
+.imagen-evento {
+  width: 100%;
+  height: 230px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* INFORMACIÓN */
+
+.informacion {
+  padding: 16px 20px;
+}
+
+.fila-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fila-info h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.fila-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.lugar {
+  display: flex;
+  align-items: center;
+
+  font-size: 13px;
+  color: #555;
+
+  margin-top: 2px;
+}
+
+.lugar ion-icon {
+  color: #e63946;
+  margin-right: 4px;
+  font-size: 17px;
+}
+
+/* DESCRIPCIÓN */
+
+.descripcion {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+
+  margin-top: 15px;
+}
+
+/* BOTÓN */
+
+.boton-inscribirse {
+  --background: #168bf5;
+  --border-radius: 6px;
+
+  height: 46px;
+
+  font-size: 15px;
+  text-transform: none;
+
+  margin-top: 18px;
+}
+
+/*fotos */
+.seccion-fotos {
+  padding: 10px 20px;
+}
+
+.seccion-fotos h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.galeria-fotos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.galeria-fotos img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
