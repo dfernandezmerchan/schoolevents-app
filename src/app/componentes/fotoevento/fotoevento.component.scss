@@ -1,12 +1,15 @@
 .publicacion-foto {
-  background: #f2f6fb;
+  background: var(--ion-background-color);
+
   border-radius: 12px;
   padding: 12px;
   margin-bottom: 20px;
+
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
 }
 
 /* CABECERA */
+
 .cabecera-foto {
   display: flex;
   align-items: center;
@@ -16,8 +19,11 @@
 .foto-perfil {
   width: 42px;
   height: 42px;
+
   border-radius: 50%;
+
   object-fit: cover;
+
   margin-right: 12px;
 }
 
@@ -25,19 +31,27 @@
   font-size: 15px;
   font-weight: 600;
   margin: 0;
+
+  color: var(--ion-text-color);
 }
 
 .datos-usuario p {
   font-size: 12px;
-  color: #888;
+
+  color: var(--ion-color-medium);
+
   margin: 4px 0 0;
 }
 
 /* IMAGEN */
+
 .imagen-publicada {
   width: 100%;
   height: 220px;
+
   object-fit: cover;
+
   border-radius: 8px;
+
   display: block;
 }

@@ -2,8 +2,10 @@
   margin: 10px;
   border-radius: 12px;
   overflow: hidden;
+
   box-shadow: none;
-  border: 1px solid #ddd;
+
+  border: 1px solid var(--ion-color-light-shade);
 }
 
 .tarjeta-comprimida > img {
@@ -26,11 +28,15 @@
   font-size: 15px;
   font-weight: bold;
   margin: 0 0 4px;
+
+  color: var(--ion-text-color);
 }
 
 .cabecera p {
   font-size: 11px;
   margin: 2px 0;
+
+  color: var(--ion-color-medium);
 }
 
 .boton-corazon {
@@ -57,5 +63,6 @@
 
 .parte-inferior span {
   font-size: 10px;
-  color: #666;
+
+  color: var(--ion-color-medium);
 }
