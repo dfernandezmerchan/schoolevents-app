@@ -1,0 +1,24 @@
+ion-tab-button {
+  --color: var(--ion-color-medium);
+  --color-selected: #ffffff;
+}
+
+ion-tab-button.tab-selected {
+  background: var(--ion-color-dark);
+  border-radius: 20px;
+  animation: aparecer 0.25s ease;
+}
+
+@keyframes aparecer {
+  0% {
+    transform: scale(0.8);
+  }
+
+  70% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

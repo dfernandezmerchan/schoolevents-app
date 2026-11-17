@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {IonButton, IonCard, IonCardContent, IonIcon} from "@ionic/angular";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-tarjetaeventocomprimida',
@@ -9,7 +10,8 @@ import {IonButton, IonCard, IonCardContent, IonIcon} from "@ionic/angular";
     IonCard,
     IonCardContent,
     IonButton,
-    IonIcon
+    IonIcon,
+    RouterLink
   ],
 })
 export class TarjetaeventocomprimidaComponent  implements OnInit {
