@@ -7,11 +7,12 @@ import {TarjetaeventoComponent} from "../../componentes/tarjetaevento/tarjetaeve
 import {
   TarjetaeventocomprimidaComponent
 } from "../../componentes/tarjetaeventocomprimida/tarjetaeventocomprimida.component";
+import {HeaderComponent} from "../../componentes/header/header.component";
 
 @Component({
   selector: 'app-calendario-page',
   templateUrl: './calendario.page.html',
   styleUrls: ['./calendario.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, CalendarioComponent, TarjetaeventoComponent, TarjetaeventocomprimidaComponent],
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, CalendarioComponent, TarjetaeventoComponent, TarjetaeventocomprimidaComponent, HeaderComponent],
 })
 export class CalendarioPage {}
