@@ -1,13 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular';
+import {
+  IonBackButton,
+  IonButtons,
+  IonContent,
+  IonHeader, IonIcon, IonItem, IonLabel, IonList,
+  IonSegment,
+  IonSegmentButton,
+  IonTitle,
+  IonToolbar
+} from '@ionic/angular';
 
 @Component({
   selector: 'app-alertas',
   templateUrl: './alertas.page.html',
   styleUrls: ['./alertas.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButtons, IonBackButton, IonSegment, IonSegmentButton, IonLabel, IonList, IonItem, IonIcon]
 })
 export class AlertasPage implements OnInit {
 
