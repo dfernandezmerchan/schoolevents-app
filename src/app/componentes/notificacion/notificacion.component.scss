@@ -1,9 +1,10 @@
+
 :host {
   display: block;
 }
 
 ion-item {
-  --background: #ffffff;
+  --background: var(--ion-color-light);
   --padding-start: 13px;
   --padding-end: 12px;
   --inner-padding-end: 5px;
@@ -12,7 +13,7 @@ ion-item {
   margin-bottom: 10px;
 
   border-radius: 15px;
-  border: 1px solid #e9eeee;
+  border: 1px solid var(--ion-color-light-shade);
 
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
 }
@@ -30,31 +31,31 @@ ion-item {
 }
 
 .icono.peligro {
-  color: #e74c3c;
-  background: #fff0ee;
+  color: var(--ion-color-danger);
+  background: rgba(var(--ion-color-danger-rgb), 0.12);
 }
 
 .icono.aviso {
-  color: #d88a25;
-  background: #fff5e7;
+  color: var(--ion-color-warning);
+  background: rgba(var(--ion-color-warning-rgb), 0.15);
 }
 
 .icono.info {
-  color: #278b91;
-  background: #eaf6f6;
+  color: var(--ion-color-tertiary);
+  background: rgba(var(--ion-color-tertiary-rgb), 0.12);
 }
 
 ion-label h3 {
   margin: 0 0 5px;
   font-size: 15px;
   font-weight: 650;
-  color: #26383d;
+  color: var(--ion-text-color);
 }
 
 ion-label p {
   margin: 0;
   font-size: 12px;
-  color: #8a9699;
+  color: var(--ion-color-medium);
   line-height: 1.5;
 }
 
@@ -64,4 +65,3 @@ ion-label p {
   border-radius: 50%;
   background: var(--ion-color-primary);
 }
-
