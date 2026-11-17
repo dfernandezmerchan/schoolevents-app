@@ -1,8 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {IonBackButton, IonButton, IonButtons, IonHeader, IonIcon, IonTitle, IonToolbar} from "@ionic/angular";
-import {personOutline} from "ionicons/icons";
 import {Router, RouterLink} from "@angular/router";
-
 // @ts-ignore
 // @ts-ignore
 @Component({
@@ -21,6 +19,7 @@ import {Router, RouterLink} from "@angular/router";
   ],
 })
 export class HeaderComponent{
+
 
 
   @Input() titulo: string = '';

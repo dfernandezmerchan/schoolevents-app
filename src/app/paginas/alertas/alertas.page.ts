@@ -11,12 +11,14 @@ import {
   IonTitle,
   IonToolbar
 } from '@ionic/angular';
+import {NotificacionComponent} from "../../componentes/notificacion/notificacion.component";
+import {HeaderComponent} from "../../componentes/header/header.component";
 
 @Component({
   selector: 'app-alertas',
   templateUrl: './alertas.page.html',
   styleUrls: ['./alertas.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButtons, IonBackButton, IonSegment, IonSegmentButton, IonLabel, IonList, IonItem, IonIcon]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButtons, IonBackButton, IonSegment, IonSegmentButton, IonLabel, IonList, IonItem, IonIcon, NotificacionComponent, HeaderComponent]
 })
 export class AlertasPage implements OnInit {
 

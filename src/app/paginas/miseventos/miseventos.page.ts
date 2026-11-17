@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
-  IonBadge,
+  IonBackButton,
+  IonBadge, IonButtons,
   IonContent,
   IonHeader,
   IonIcon, IonLabel,
@@ -20,7 +21,7 @@ import {HeaderComponent} from "../../componentes/header/header.component";
   selector: 'app-miseventos',
   templateUrl: './miseventos.page.html',
   styleUrls: ['./miseventos.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, TarjetaeventocomprimidaComponent, IonBadge, IonIcon, HeaderComponent, IonSegment, IonSegmentButton, IonLabel]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, TarjetaeventocomprimidaComponent, IonBadge, IonIcon, HeaderComponent, IonSegment, IonSegmentButton, IonLabel, IonBackButton, IonButtons]
 })
 export class MiseventosPage implements OnInit {
 

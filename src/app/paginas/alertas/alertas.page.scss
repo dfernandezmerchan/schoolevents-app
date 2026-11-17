@@ -3,108 +3,25 @@ ion-content {
   --background: #f3f6f6;
 }
 
-
-/* SEGMENT */
-
-
-
-/* TITULOS DE GRUPO */
-.titulo-grupo {
-  margin: 20px 17px 9px;
-
-  font-size: 12px;
-  font-weight: 700;
-
-  color: #879397;
-
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-
-/* LISTAS */
-ion-list {
-  background: transparent;
-  padding: 0;
-  margin: 0 12px;
-}
-
-
-/* TARJETAS */
-ion-item {
-  --background: #ffffff;
-  --padding-start: 11px;
-  --padding-end: 11px;
-  --inner-padding-end: 4px;
-  --min-height: 64px;
-
-  margin-bottom: 8px;
-
-  border-radius: 13px;
-
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
-
-  border: 1px solid #e9eeee;
-}
-
-
-/* ICONOS */
-.icono {
-  width: 38px;
-  height: 38px;
-
-  border-radius: 10px;
-
-  display: grid;
-  place-items: center;
-
-  font-size: 20px;
-
-  margin-inline-end: 11px;
-}
-
-
-/* PELIGRO */
-.icono.peligro {
-  color: #e74c3c;
-  background: #fff0ee;
-}
-
-
-/* AVISO */
-.icono.aviso {
-  color: #d88a25;
-  background: #fff5e7;
-}
-
-
-/* INFORMACION */
-.icono.info {
-  color: #278b91;
-  background: #eaf6f6;
-}
-
-
-/* TITULO NOTIFICACION */
-ion-label h3 {
-  margin: 0 0 4px;
-
-  font-size: 13px;
-  font-weight: 650;
-
-  color: #26383d;
-}
-
-
-/* DESCRIPCION */
 /* TITULOS DE GRUPO */
 .titulo-grupo {
   margin: 22px 17px 12px;
+
   font-size: 13px;
   font-weight: 700;
+
   color: #879397;
+
   text-transform: uppercase;
   letter-spacing: 0.06em;
+}
+
+.titulo {
+  font-size: 27px;
+  font-weight: 700;
+  color: var(--ion-text-color);
+  margin: 0;
+  background-color: var(--ion-color-);
 }
 
 
@@ -116,88 +33,3 @@ ion-list {
 }
 
 
-/* TARJETAS DE NOTIFICACIONES */
-ion-item {
-  --background: #ffffff;
-  --padding-start: 13px;
-  --padding-end: 12px;
-  --inner-padding-end: 5px;
-  --min-height: 78px;
-
-  margin-bottom: 10px;
-
-  border-radius: 15px;
-  border: 1px solid #e9eeee;
-
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
-}
-
-
-/* ICONOS */
-.icono {
-  width: 46px;
-  height: 46px;
-
-  border-radius: 12px;
-
-  display: grid;
-  place-items: center;
-
-  font-size: 23px;
-
-  margin-inline-end: 13px;
-}
-
-
-/* PELIGRO */
-.icono.peligro {
-  color: #e74c3c;
-  background: #fff0ee;
-}
-
-
-/* AVISO */
-.icono.aviso {
-  color: #d88a25;
-  background: #fff5e7;
-}
-
-
-/* INFORMACION */
-.icono.info {
-  color: #278b91;
-  background: #eaf6f6;
-}
-
-
-/* TITULO */
-ion-label h3 {
-  margin: 0 0 5px;
-
-  font-size: 15px;
-  font-weight: 650;
-
-  color: #26383d;
-}
-
-
-/* DESCRIPCION */
-ion-label p {
-  margin: 0;
-
-  font-size: 12px;
-  color: #8a9699;
-
-  line-height: 1.5;
-}
-
-
-/* PUNTO DE NO LEIDA */
-.punto {
-  width: 9px;
-  height: 9px;
-
-  border-radius: 50%;
-
-  background: var(--ion-color-primary);
-}
