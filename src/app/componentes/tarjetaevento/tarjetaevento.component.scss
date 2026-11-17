@@ -5,15 +5,15 @@ ion-card {
 
   border: 1px solid var(--ion-color-light-shade);
 
-  box-shadow: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 
-  background: var(--ion-background-color);
+  background: var(--ion-color-light);
 }
 
 /* Cabecera */
 
 ion-item {
-  --background: var(--ion-background-color);
+  --background: var(--ion-color-light);
   padding: 0 5px;
 }
 

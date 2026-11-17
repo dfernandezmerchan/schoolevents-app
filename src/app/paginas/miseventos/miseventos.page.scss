@@ -77,8 +77,8 @@ ion-segment {
 
 ion-segment-button {
   --indicator-color: var(--ion-color-primary);
-  --color: var(--ion-text-color);
-  --color-checked: var(--ion-color-medium);
+  --color: var(--ion-color-medium);
+  --color-checked: #ffffff;
 
   min-height: 42px;
   font-weight: 600;
@@ -90,5 +90,3 @@ ion-segment-button {
   flex-direction: column;
   gap: 5px;
 }
-
-

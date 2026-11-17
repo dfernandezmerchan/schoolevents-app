@@ -4,10 +4,11 @@ ion-datetime {
   max-width: 350px;
   border-radius: 20px;
 
-  --background: #ffffff;
-  --background-rgb: 255, 255, 255;
+  --background: var(--ion-color-light);
+  --background-rgb: 247, 245, 252;
 
   --title-color: var(--ion-text-color);
+
   --wheel-highlight-background: var(--ion-color-primary);
-  --wheel-fade-background-rgb: 255, 255, 255;
+  --wheel-fade-background-rgb: 247, 245, 252;
 }

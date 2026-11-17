@@ -3,7 +3,9 @@
   border-radius: 12px;
   overflow: hidden;
 
-  box-shadow: none;
+  background: var(--ion-color-light);
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 
   border: 1px solid var(--ion-color-light-shade);
 }
@@ -63,6 +65,5 @@
 
 .parte-inferior span {
   font-size: 10px;
-
   color: var(--ion-color-medium);
 }

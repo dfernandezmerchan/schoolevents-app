@@ -81,3 +81,46 @@
   --ion-text-color: #302b3d;
   --ion-text-color-rgb: 48, 43, 61;
 }
+
+/*MODO OSCUROO*/
+
+/* MODO OSCURO */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* COLORES PRINCIPALES */
+    --ion-color-primary: #7254e8;
+    --ion-color-primary-rgb: 114, 84, 232;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+
+    --ion-color-secondary: #ff6685;
+    --ion-color-secondary-rgb: 255, 102, 133;
+    --ion-color-secondary-contrast: #ffffff;
+
+    --ion-color-tertiary: #20c9a6;
+    --ion-color-tertiary-rgb: 32, 201, 166;
+    --ion-color-tertiary-contrast: #102d29;
+
+    /* FONDO */
+    --ion-background-color: #18171d;
+    --ion-background-color-rgb: 24, 23, 29;
+
+    /* COLOR CLARO = SUPERFICIE DE TARJETAS */
+    --ion-color-light: #25232c;
+    --ion-color-light-rgb: 37, 35, 44;
+    --ion-color-light-contrast: #ffffff;
+
+    /* MEDIO */
+    --ion-color-medium: #a5a1b0;
+    --ion-color-medium-rgb: 165, 161, 176;
+
+    /* OSCURO */
+    --ion-color-dark: #111015;
+    --ion-color-dark-rgb: 17, 16, 21;
+    --ion-color-dark-contrast: #ffffff;
+
+    /* TEXTO */
+    --ion-text-color: #f7f5fc;
+    --ion-text-color-rgb: 247, 245, 252;
+  }
+}
