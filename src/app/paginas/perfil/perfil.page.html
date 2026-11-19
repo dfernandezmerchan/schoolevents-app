@@ -95,6 +95,14 @@
     </div>
   </div>
 
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-icon slot="start" name="moon-outline"></ion-icon>
+      <ion-toggle (ionChange)="cambiarTema($event)">Modo oscuro</ion-toggle>
+    </ion-item>
+  </ion-list>
+
+
   <ion-button
     color="danger"
     fill="outline"
@@ -102,5 +110,7 @@
     routerLink="/login">
     Cerrar sesión
   </ion-button>
+
+
 
 </ion-content>

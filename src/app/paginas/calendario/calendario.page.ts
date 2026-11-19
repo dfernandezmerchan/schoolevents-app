@@ -15,4 +15,6 @@ import {HeaderComponent} from "../../componentes/header/header.component";
   styleUrls: ['./calendario.page.scss'],
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, CalendarioComponent, TarjetaeventoComponent, TarjetaeventocomprimidaComponent, HeaderComponent],
 })
-export class CalendarioPage {}
+export class CalendarioPage {
+
+}

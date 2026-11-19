@@ -1,7 +1,9 @@
-
 :root {
 
-  /* COLOR PRINCIPAL - MORADO */
+  /* =========================
+     COLOR PRINCIPAL - MORADO
+     ========================= */
+
   --ion-color-primary: #7254e8;
   --ion-color-primary-rgb: 114, 84, 232;
   --ion-color-primary-contrast: #ffffff;
@@ -9,7 +11,11 @@
   --ion-color-primary-shade: #644ad2;
   --ion-color-primary-tint: #8065ea;
 
-  /* COLOR SECUNDARIO - CORAL */
+
+  /* =========================
+     COLOR SECUNDARIO - CORAL
+     ========================= */
+
   --ion-color-secondary: #ff6685;
   --ion-color-secondary-rgb: 255, 102, 133;
   --ion-color-secondary-contrast: #ffffff;
@@ -17,7 +23,11 @@
   --ion-color-secondary-shade: #e05975;
   --ion-color-secondary-tint: #ff758f;
 
-  /* COLOR TERCIARIO - MENTA */
+
+  /* =========================
+     COLOR TERCIARIO - MENTA
+     ========================= */
+
   --ion-color-tertiary: #20c9a6;
   --ion-color-tertiary-rgb: 32, 201, 166;
   --ion-color-tertiary-contrast: #102d29;
@@ -25,7 +35,11 @@
   --ion-color-tertiary-shade: #1cb192;
   --ion-color-tertiary-tint: #36ceaf;
 
-  /* ÉXITO */
+
+  /* =========================
+     ÉXITO
+     ========================= */
+
   --ion-color-success: #20c997;
   --ion-color-success-rgb: 32, 201, 151;
   --ion-color-success-contrast: #102d29;
@@ -33,7 +47,11 @@
   --ion-color-success-shade: #1cb185;
   --ion-color-success-tint: #36cfa3;
 
-  /* AVISO - AMARILLO */
+
+  /* =========================
+     AVISO - AMARILLO
+     ========================= */
+
   --ion-color-warning: #ffb84d;
   --ion-color-warning-rgb: 255, 184, 77;
   --ion-color-warning-contrast: #38250b;
@@ -41,7 +59,11 @@
   --ion-color-warning-shade: #e0a244;
   --ion-color-warning-tint: #ffbf5f;
 
-  /* ERROR */
+
+  /* =========================
+     ERROR
+     ========================= */
+
   --ion-color-danger: #f04468;
   --ion-color-danger-rgb: 240, 68, 104;
   --ion-color-danger-contrast: #ffffff;
@@ -49,7 +71,11 @@
   --ion-color-danger-shade: #d33c5c;
   --ion-color-danger-tint: #f25778;
 
-  /* CLARO */
+
+  /* =========================
+     CLARO
+     ========================= */
+
   --ion-color-light: #f7f5fc;
   --ion-color-light-rgb: 247, 245, 252;
   --ion-color-light-contrast: #302b3d;
@@ -57,7 +83,11 @@
   --ion-color-light-shade: #d9d8de;
   --ion-color-light-tint: #f8f6fc;
 
-  /* MEDIO */
+
+  /* =========================
+     MEDIO
+     ========================= */
+
   --ion-color-medium: #827d91;
   --ion-color-medium-rgb: 130, 125, 145;
   --ion-color-medium-contrast: #ffffff;
@@ -65,7 +95,11 @@
   --ion-color-medium-shade: #726e7f;
   --ion-color-medium-tint: #8e899b;
 
-  /* OSCURO */
+
+  /* =========================
+     OSCURO
+     ========================= */
+
   --ion-color-dark: #302b3d;
   --ion-color-dark-rgb: 48, 43, 61;
   --ion-color-dark-contrast: #ffffff;
@@ -73,54 +107,154 @@
   --ion-color-dark-shade: #2a2636;
   --ion-color-dark-tint: #454152;
 
-  /* FONDOS GENERALES */
+
+  /* =========================
+     FONDO GENERAL
+     ========================= */
+
   --ion-background-color: #f7f5fc;
   --ion-background-color-rgb: 247, 245, 252;
 
-  /* TEXTOS */
+
+  /* =========================
+     TEXTOS
+     ========================= */
+
   --ion-text-color: #302b3d;
   --ion-text-color-rgb: 48, 43, 61;
 }
 
-/*MODO OSCUROO*/
 
-/* MODO OSCURO */
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* COLORES PRINCIPALES */
-    --ion-color-primary: #7254e8;
-    --ion-color-primary-rgb: 114, 84, 232;
-    --ion-color-primary-contrast: #ffffff;
-    --ion-color-primary-contrast-rgb: 255, 255, 255;
+/* =========================================
+   MODO OSCURO
+   Se activa mediante:
+   class="ion-palette-dark"
+   ========================================= */
 
-    --ion-color-secondary: #ff6685;
-    --ion-color-secondary-rgb: 255, 102, 133;
-    --ion-color-secondary-contrast: #ffffff;
+.ion-palette-dark {
 
-    --ion-color-tertiary: #20c9a6;
-    --ion-color-tertiary-rgb: 32, 201, 166;
-    --ion-color-tertiary-contrast: #102d29;
+  /* =========================
+     COLOR PRINCIPAL - MORADO
+     ========================= */
 
-    /* FONDO */
-    --ion-background-color: #18171d;
-    --ion-background-color-rgb: 24, 23, 29;
+  --ion-color-primary: #7254e8;
+  --ion-color-primary-rgb: 114, 84, 232;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #644ad2;
+  --ion-color-primary-tint: #8065ea;
 
-    /* COLOR CLARO = SUPERFICIE DE TARJETAS */
-    --ion-color-light: #25232c;
-    --ion-color-light-rgb: 37, 35, 44;
-    --ion-color-light-contrast: #ffffff;
 
-    /* MEDIO */
-    --ion-color-medium: #a5a1b0;
-    --ion-color-medium-rgb: 165, 161, 176;
+  /* =========================
+     COLOR SECUNDARIO - CORAL
+     ========================= */
 
-    /* OSCURO */
-    --ion-color-dark: #111015;
-    --ion-color-dark-rgb: 17, 16, 21;
-    --ion-color-dark-contrast: #ffffff;
+  --ion-color-secondary: #ff6685;
+  --ion-color-secondary-rgb: 255, 102, 133;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #e05975;
+  --ion-color-secondary-tint: #ff758f;
 
-    /* TEXTO */
-    --ion-text-color: #f7f5fc;
-    --ion-text-color-rgb: 247, 245, 252;
-  }
+
+  /* =========================
+     COLOR TERCIARIO - MENTA
+     ========================= */
+
+  --ion-color-tertiary: #20c9a6;
+  --ion-color-tertiary-rgb: 32, 201, 166;
+  --ion-color-tertiary-contrast: #102d29;
+  --ion-color-tertiary-contrast-rgb: 16, 45, 41;
+  --ion-color-tertiary-shade: #1cb192;
+  --ion-color-tertiary-tint: #36ceaf;
+
+
+  /* =========================
+     ÉXITO
+     ========================= */
+
+  --ion-color-success: #20c997;
+  --ion-color-success-rgb: 32, 201, 151;
+  --ion-color-success-contrast: #102d29;
+  --ion-color-success-contrast-rgb: 16, 45, 41;
+  --ion-color-success-shade: #1cb185;
+  --ion-color-success-tint: #36cfa3;
+
+
+  /* =========================
+     AVISO - AMARILLO
+     ========================= */
+
+  --ion-color-warning: #ffb84d;
+  --ion-color-warning-rgb: 255, 184, 77;
+  --ion-color-warning-contrast: #38250b;
+  --ion-color-warning-contrast-rgb: 56, 37, 11;
+  --ion-color-warning-shade: #e0a244;
+  --ion-color-warning-tint: #ffbf5f;
+
+
+  /* =========================
+     ERROR
+     ========================= */
+
+  --ion-color-danger: #f04468;
+  --ion-color-danger-rgb: 240, 68, 104;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #d33c5c;
+  --ion-color-danger-tint: #f25778;
+
+
+  /* =========================
+     CLARO
+     En oscuro se usa como
+     superficie de tarjetas/items
+     ========================= */
+
+  --ion-color-light: #25232c;
+  --ion-color-light-rgb: 37, 35, 44;
+  --ion-color-light-contrast: #ffffff;
+  --ion-color-light-contrast-rgb: 255, 255, 255;
+  --ion-color-light-shade: #211f27;
+  --ion-color-light-tint: #3c3943;
+
+
+  /* =========================
+     MEDIO
+     ========================= */
+
+  --ion-color-medium: #a5a1b0;
+  --ion-color-medium-rgb: 165, 161, 176;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #918e9b;
+  --ion-color-medium-tint: #aeabb8;
+
+
+  /* =========================
+     OSCURO
+     ========================= */
+
+  --ion-color-dark: #111015;
+  --ion-color-dark-rgb: 17, 16, 21;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #0f0e12;
+  --ion-color-dark-tint: #29272d;
+
+
+  /* =========================
+     FONDO GENERAL
+     ========================= */
+
+  --ion-background-color: #18171d;
+  --ion-background-color-rgb: 24, 23, 29;
+
+
+  /* =========================
+     TEXTOS
+     ========================= */
+
+  --ion-text-color: #f7f5fc;
+  --ion-text-color-rgb: 247, 245, 252;
 }
