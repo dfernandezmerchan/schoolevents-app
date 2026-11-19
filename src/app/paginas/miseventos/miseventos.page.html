@@ -40,9 +40,11 @@
     <!-- Tarjetas de prueba -->
     <div class="lista-eventos">
 
-      <app-tarjetaeventocomprimida></app-tarjetaeventocomprimida>
-
-      <app-tarjetaeventocomprimida></app-tarjetaeventocomprimida>
+      @for (evento of eventos; track evento.id) {
+        <app-tarjetaeventocomprimida
+          [evento]="evento">
+        </app-tarjetaeventocomprimida>
+      }
 
     </div>
 

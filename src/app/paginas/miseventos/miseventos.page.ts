@@ -16,7 +16,8 @@ import {
   TarjetaeventocomprimidaComponent
 } from "../../componentes/tarjetaeventocomprimida/tarjetaeventocomprimida.component";
 import {HeaderComponent} from "../../componentes/header/header.component";
-
+import {Evento} from "../../modelos/evento";
+import { eventos } from '../../datos/evento';
 @Component({
   selector: 'app-miseventos',
   templateUrl: './miseventos.page.html',
@@ -26,6 +27,7 @@ import {HeaderComponent} from "../../componentes/header/header.component";
 export class MiseventosPage implements OnInit {
 
   constructor() { }
+  eventos: Evento[] = eventos;
 
   ngOnInit() {
   }

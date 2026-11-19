@@ -1,4 +1,6 @@
-<ion-card class="tarjeta-comprimida" routerLink="/app/eventodetalle">
+<ion-card
+  class="tarjeta-comprimida"
+  [routerLink]="['/app/eventodetalle', evento.id]">
 
   <img
     src="https://ionicframework.com/docs/img/demos/card-media.png"
@@ -9,18 +11,18 @@
 
     <div class="cabecera">
       <div>
-        <h2>Titulo del evento</h2>
-        <p>Ubicacion del evento</p>
-        <p>Fecha y hora del evento</p>
+        <h2>{{ evento.titulo }}</h2>
+        <p>{{ evento.lugar.nombre }}</p>
+        <p>{{ evento.fechaini | date:'dd/MM/yyyy HH:mm' }}</p>
       </div>
     </div>
 
     <div class="parte-inferior">
       <ion-button size="small">
-        Categoria
+        {{ evento.categoria.nombre }}
       </ion-button>
 
-      <span>Organizador</span>
+      <span>{{ evento.organizador.nombre }}</span>
     </div>
 
   </ion-card-content>

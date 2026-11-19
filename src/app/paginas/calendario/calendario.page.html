@@ -1,11 +1,36 @@
+
 <ion-header>
-  <app-header titulo = "Calendario"></app-header>
+  <app-header titulo="Calendario"></app-header>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-  <app-calendario></app-calendario>
-  <app-tarjetaeventocomprimida></app-tarjetaeventocomprimida>
-  <app-tarjetaeventocomprimida></app-tarjetaeventocomprimida>
+  <app-calendario
+    (fechaSeleccionada)="fechaSeleccionada = $event">
+  </app-calendario>
+
+  <div class="ion-padding">
+
+    @if (fechaSeleccionada) {
+
+      <h2>Eventos del día</h2>
+
+      @if (eventosDelDia.length > 0) {
+
+        @for (evento of eventosDelDia; track evento.id) {
+          <app-tarjetaeventocomprimida
+            [evento]="evento">
+          </app-tarjetaeventocomprimida>
+        }
+
+      } @else {
+        <p>No hay eventos para este día.</p>
+      }
+
+    } @else {
+      <p>Selecciona un día para consultar sus eventos.</p>
+    }
+
+  </div>
 
 </ion-content>

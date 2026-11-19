@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {IonButton, IonCard, IonCardContent, IonIcon} from "@ionic/angular";
 import { RouterLink } from '@angular/router';
+import {Evento} from "../../modelos/evento";
+import {DatePipe} from "@angular/common";
 
 @Component({
   selector: 'app-tarjetaeventocomprimida',
@@ -11,12 +13,14 @@ import { RouterLink } from '@angular/router';
     IonCardContent,
     IonButton,
     IonIcon,
-    RouterLink
+    RouterLink,
+    DatePipe
   ],
 })
 export class TarjetaeventocomprimidaComponent  implements OnInit {
 
   constructor() { }
+  @Input() evento?: Evento;
 
   ngOnInit() {}
 

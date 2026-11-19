@@ -8,7 +8,8 @@ import {
   TarjetaeventocomprimidaComponent
 } from "../../componentes/tarjetaeventocomprimida/tarjetaeventocomprimida.component";
 import {HeaderComponent} from "../../componentes/header/header.component";
-
+import {Evento} from "../../modelos/evento";
+import {eventos} from "../../datos/evento";
 @Component({
   selector: 'app-calendario-page',
   templateUrl: './calendario.page.html',
@@ -16,5 +17,20 @@ import {HeaderComponent} from "../../componentes/header/header.component";
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, CalendarioComponent, TarjetaeventoComponent, TarjetaeventocomprimidaComponent, HeaderComponent],
 })
 export class CalendarioPage {
+
+  fechaSeleccionada: string = '';
+
+  eventos: Evento[] = eventos;
+
+  get eventosDelDia(): Evento[] {
+    return this.eventos.filter(evento => {
+      const inicio = evento.fechaini.substring(0, 10);
+      const fin = evento.fechafin.substring(0, 10);
+
+      return this.fechaSeleccionada >= inicio &&
+        this.fechaSeleccionada <= fin;
+    });
+  }
+
 
 }
