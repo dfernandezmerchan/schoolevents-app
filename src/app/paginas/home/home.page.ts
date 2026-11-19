@@ -12,19 +12,24 @@ import {
 } from '@ionic/angular';
 import {addIcons} from "ionicons";
 import {water} from "ionicons/icons";
-import { HeaderComponent } from "../componentes/header/header.component";
-import {TarjetaeventoComponent} from "../componentes/tarjetaevento/tarjetaevento.component";
+import { HeaderComponent } from "../../componentes/header/header.component";
+import {TarjetaeventoComponent} from "../../componentes/tarjetaevento/tarjetaevento.component";
+
+import { Evento } from '../../modelos/evento';
+import { eventos } from '../../datos/evento';
+import {NgForOf} from "@angular/common";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonHeader, IonToolbar, IonContent, IonButton, IonSearchbar, TarjetaeventoComponent, IonSegment, IonSegmentButton, IonLabel, IonPopover, HeaderComponent],
+  imports: [IonHeader, IonToolbar, IonContent, IonButton, IonSearchbar, TarjetaeventoComponent, IonSegment, IonSegmentButton, IonLabel, IonPopover, HeaderComponent, NgForOf],
 })
 export class HomePage {
   constructor() {
-
     addIcons({ water });
-
   }
+
+  eventos: Evento[] = eventos;
+
 }

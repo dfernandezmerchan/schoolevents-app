@@ -21,7 +21,7 @@ export const routes: Routes = [
     children: [
       {
         path: 'home',
-        loadComponent: () => import('./home/home.page').then(m =>
+        loadComponent: () => import('./paginas/home/home.page').then(m =>
           m.HomePage),
       },
       {
@@ -47,7 +47,7 @@ export const routes: Routes = [
       },
 
       {
-        path: 'eventodetalle',
+        path: 'eventodetalle/:id',
         loadComponent: () => import('./paginas/eventodetalle/eventodetalle.page').then( m => m.EventodetallePage)
       },
 

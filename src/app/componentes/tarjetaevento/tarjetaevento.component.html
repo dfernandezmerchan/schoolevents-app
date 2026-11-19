@@ -1,16 +1,19 @@
-<ion-card routerLink="/app/eventodetalle">
+<ion-card [routerLink]="['/app/eventodetalle', evento.id]">
 
   <!-- Cabecera -->
   <ion-item lines="none">
     <ion-avatar slot="start">
       <div class="avatar">
-        A
+        {{ evento.organizador.nombre.charAt(0)}}
       </div>
     </ion-avatar>
 
     <ion-label>
-      <h2>Titulo del evento</h2>
-      <p>Organizador</p>
+      <h2>{{ evento.titulo }}</h2>
+      <p>
+        {{evento.organizador.nombre}}
+        {{evento.organizador.apellido1}}
+      </p>
     </ion-label>
 
     <ion-button fill="clear" slot="end">
@@ -29,20 +32,20 @@
   <!-- Información -->
   <ion-card-content>
 
-    <h2>Titulo del Evento</h2>
+    <h2>{{ evento.titulo }}</h2>
 
-    <p>📍 Ubicación</p>
+    <p>📍 {{evento.lugar.nombre}}</p>
 
-    <p>🕐 13 Fecha y Hora</p>
+    <p>🕐 {{ evento.fechaini | date:'dd/MM/yyyy HH:mm' }} </p>
 
     <p class="descripcion">
-      Descripción
+      {{ evento.descripcion }}
     </p>
 
     <div class="parte-inferior">
 
       <ion-button size="small">
-        Categoría
+        {{ evento.categoria.nombre }}
       </ion-button>
 
       <ion-button fill="clear" class="boton-corazon">

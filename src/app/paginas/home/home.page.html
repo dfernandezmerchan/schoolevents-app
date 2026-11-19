@@ -30,8 +30,9 @@
 
   </ion-segment>
 
-  <app-tarjetaevento></app-tarjetaevento>
-  <app-tarjetaevento></app-tarjetaevento>
-  <app-tarjetaevento></app-tarjetaevento>
-  <app-tarjetaevento></app-tarjetaevento>
+  @for (evento of eventos; track evento.id) {
+    <app-tarjetaevento
+      [evento]="evento">
+    </app-tarjetaevento>
+  }
 </ion-content>

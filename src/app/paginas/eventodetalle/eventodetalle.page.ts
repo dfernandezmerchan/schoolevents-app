@@ -1,25 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import {
-  IonAvatar,
   IonButton,
   IonContent,
-  IonHeader,
-  IonIcon, IonItem,
-  IonLabel, IonList,
-  IonSegment,
-  IonSegmentButton,
-  IonTitle,
-  IonToolbar
+  IonIcon
 } from '@ionic/angular';
 
 import { addIcons } from 'ionicons';
-import {heart, heartOutline, location} from 'ionicons/icons';
+import {heartOutline, location} from 'ionicons/icons';
 
 import { HeaderComponent } from "../../componentes/header/header.component";
 import {FotoeventoComponent} from "../../componentes/fotoevento/fotoevento.component";
+import { Evento } from '../../modelos/evento';
+import {ActivatedRoute} from "@angular/router";
+import {eventos} from "../../datos/evento";
 
 @Component({
   selector: 'app-eventodetalle',
@@ -42,6 +38,12 @@ export class EventodetallePage implements OnInit {
       heartOutline,
       location
     });
+  }
+
+  id = input<string>();
+
+  get evento(): Evento | undefined {
+    return eventos.find(e => e.id === Number(this.id()));
   }
 
   ngOnInit() {

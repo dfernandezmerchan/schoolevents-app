@@ -1,76 +1,84 @@
-<app-header></app-header>
+<app-header titulo="Detalle del evento"></app-header>
 
 <ion-content>
 
-  <div class="evento">
+  @if (evento) {
 
-    <!-- Título y organizador -->
-    <div class="cabecera-evento">
+    <div class="evento">
 
-      <div class="icono-evento">
-        A
-      </div>
+      <!-- Título y organizador -->
+      <div class="cabecera-evento">
 
-      <div class="datos-evento">
-        <h2>Titulo del evento</h2>
-        <p>Organizador del evento</p>
-      </div>
-
-      <ion-button fill="clear" class="boton-corazon">
-        <ion-icon name="heart-outline"></ion-icon>
-      </ion-button>
-
-    </div>
-
-    <!-- Imagen -->
-    <img
-      class="imagen-evento"
-      src="https://placehold.co/600x350"
-      alt="imagen">
-
-    <!-- Información -->
-    <div class="informacion">
-
-      <div class="fila-info">
-
-        <div>
-          <h3>Titulo del evento</h3>
-          <p>fecha y hora del evento</p>
+        <div class="icono-evento">
+          {{ evento.organizador.nombre.charAt(0) }}
         </div>
 
-        <div class="lugar">
-          <ion-icon name="location"></ion-icon>
-          <span>localización del evento</span>
+        <div class="datos-evento">
+          <h2>{{ evento.titulo }}</h2>
+          <p>
+            {{ evento.organizador.nombre }}
+            {{ evento.organizador.apellido1 }}
+          </p>
+        </div>
+
+        <ion-button fill="clear" class="boton-corazon">
+          <ion-icon name="heart-outline"></ion-icon>
+        </ion-button>
+
+      </div>
+
+      <!-- Imagen -->
+      <img
+        class="imagen-evento"
+        src="https://placehold.co/600x350"
+        alt="Imagen del evento">
+
+      <!-- Información -->
+      <div class="informacion">
+
+        <div class="fila-info">
+
+          <div>
+            <h3>{{ evento.titulo }}</h3>
+
+            <p>
+              {{ evento.fechaini | date:'dd/MM/yyyy HH:mm' }}
+            </p>
+          </div>
+
+          <div class="lugar">
+            <ion-icon name="location"></ion-icon>
+            <span>{{ evento.lugar.nombre }}</span>
+          </div>
+
+        </div>
+
+        <p class="descripcion">
+          {{ evento.descripcion }}
+        </p>
+
+        <!-- Botón -->
+        <ion-button expand="block" class="boton-inscribirse">
+          Inscribirse
+        </ion-button>
+
+      </div>
+
+      <!-- Fotos -->
+      <div class="seccion-fotos">
+
+        <h3>Fotos del evento</h3>
+
+        <div class="galeria-fotos">
+          <app-fotoevento></app-fotoevento>
+          <app-fotoevento></app-fotoevento>
+          <app-fotoevento></app-fotoevento>
         </div>
 
       </div>
 
-      <p class="descripcion">
-        Descripción del evento
-      </p>
-
-      <!-- Botón -->
-      <ion-button expand="block" class="boton-inscribirse">
-        Inscribirse
-      </ion-button>
-
     </div>
 
-    <!-- Pestañas -->
-    <div class="seccion-fotos">
-
-      <h3>Fotos del evento</h3>
-
-      <!-- Aquí irán las fotos -->
-      <div class ="galeria-fotos">
-        <app-fotoevento></app-fotoevento>
-        <app-fotoevento></app-fotoevento>
-        <app-fotoevento></app-fotoevento>
-      </div>
-
-
-    </div>
-
-  </div>
+  }
 
 </ion-content>
