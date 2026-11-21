@@ -47,10 +47,16 @@ export const routes: Routes = [
         loadComponent: () => import('./paginas/eventodetalle/eventodetalle.page').then( m => m.EventodetallePage)
       },
 
+      {
+        path: 'crearevento',
+        loadComponent: () => import('./paginas/crearevento/crearevento.page').then( m => m.CreareventoPage)
+      },
+
 
 
     ],
   },
+
 
 
 

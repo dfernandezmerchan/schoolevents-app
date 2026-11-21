@@ -18,12 +18,13 @@ import {TarjetaeventoComponent} from "../../componentes/tarjetaevento/tarjetaeve
 import { Evento } from '../../modelos/evento';
 import { eventos } from '../../datos/evento';
 import {NgForOf} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonHeader, IonToolbar, IonContent, IonButton, IonSearchbar, TarjetaeventoComponent, IonSegment, IonSegmentButton, IonLabel, IonPopover, HeaderComponent, NgForOf],
+  imports: [IonHeader, IonToolbar, IonContent, IonButton, IonSearchbar, TarjetaeventoComponent, IonSegment, IonSegmentButton, IonLabel, IonPopover, HeaderComponent, NgForOf, IonIcon, RouterLink],
 })
 export class HomePage {
   constructor() {

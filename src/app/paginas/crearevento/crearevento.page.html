@@ -1,0 +1,165 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Crear evento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="introduccion">
+    <div class="icono-intro">
+      <ion-icon name="calendar-outline"></ion-icon>
+    </div>
+    <h1>Nuevo evento</h1>
+    <p>Completa la información para organizar un nuevo evento.</p>
+  </div>
+
+  <form>
+
+    <!-- INFORMACIÓN GENERAL -->
+    <div class="seccion">
+      <div class="titulo-seccion">
+        <ion-icon name="document-text-outline"></ion-icon>
+        <h2>Información general</h2>
+      </div>
+
+      <ion-item>
+        <ion-input
+          label="Título del evento"
+          labelPlacement="stacked"
+          placeholder="Ej. Fiesta de bienvenida">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-textarea
+          label="Descripción"
+          labelPlacement="stacked"
+          placeholder="Describe brevemente el evento..."
+          rows="4">
+        </ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-select label="Estado" labelPlacement="stacked" placeholder="Selecciona un estado">
+          <ion-select-option value="BORRADOR">Borrador</ion-select-option>
+          <ion-select-option value="PUBLICADO">Publicado</ion-select-option>
+          <ion-select-option value="FINALIZADO">Finalizado</ion-select-option>
+          <ion-select-option value="CANCELADO">Cancelado</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <!-- FECHAS -->
+    <div class="seccion">
+      <div class="titulo-seccion">
+        <ion-icon name="time-outline"></ion-icon>
+        <h2>Fecha y horario</h2>
+      </div>
+
+      <ion-item>
+        <ion-input
+          type="datetime-local"
+          label="Fecha de inicio"
+          labelPlacement="stacked">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+          type="datetime-local"
+          label="Fecha de finalización"
+          labelPlacement="stacked">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+          type="datetime-local"
+          label="Fecha límite de inscripción"
+          labelPlacement="stacked">
+        </ion-input>
+      </ion-item>
+    </div>
+
+    <!-- ORGANIZACIÓN -->
+    <div class="seccion">
+      <div class="titulo-seccion">
+        <ion-icon name="business-outline"></ion-icon>
+        <h2>Organización</h2>
+      </div>
+
+      <ion-item>
+        <ion-select label="Lugar" labelPlacement="stacked" placeholder="Selecciona un lugar">
+          <ion-select-option value="1">Salón de actos</ion-select-option>
+          <ion-select-option value="2">Patio principal</ion-select-option>
+          <ion-select-option value="3">Aula de informática</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-select label="Categoría" labelPlacement="stacked" placeholder="Selecciona una categoría">
+          <ion-select-option value="1">Académico</ion-select-option>
+          <ion-select-option value="2">Deportivo</ion-select-option>
+          <ion-select-option value="3">Cultural</ion-select-option>
+          <ion-select-option value="4">Ocio</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-select
+          label="Cursos participantes"
+          labelPlacement="stacked"
+          placeholder="Selecciona los cursos"
+          [multiple]="true">
+
+          <ion-select-option value="1">1º DAM</ion-select-option>
+          <ion-select-option value="2">2º DAM</ion-select-option>
+          <ion-select-option value="3">1º DAW</ion-select-option>
+          <ion-select-option value="4">2º DAW</ion-select-option>
+
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <!-- ORGANIZADOR -->
+    <div class="seccion">
+      <div class="titulo-seccion">
+        <ion-icon name="person-outline"></ion-icon>
+        <h2>Organizador</h2>
+      </div>
+
+      <ion-item>
+        <ion-input
+          label="Nombre del organizador"
+          labelPlacement="stacked"
+          placeholder="Nombre y apellidos">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+          type="email"
+          label="Correo electrónico"
+          labelPlacement="stacked"
+          placeholder="correo@ejemplo.com">
+        </ion-input>
+      </ion-item>
+    </div>
+
+    <!-- BOTONES -->
+    <div class="botones">
+      <ion-button expand="block" color="primary" type="button">
+        <ion-icon name="add-circle-outline" slot="start"></ion-icon>
+        Crear evento
+      </ion-button>
+
+      <ion-button expand="block" fill="clear" color="medium" type="button">
+        Cancelar
+      </ion-button>
+    </div>
+
+  </form>
+
+</ion-content>

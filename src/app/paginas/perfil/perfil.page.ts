@@ -6,7 +6,7 @@ import {
   IonButton,
   IonContent,
   IonHeader,
-  IonIcon, IonItem, IonList,
+  IonIcon, IonItem, IonLabel, IonList,
   IonRouterLink,
   IonTitle,
   IonToggle,
@@ -18,7 +18,7 @@ import {HeaderComponent} from "../../componentes/header/header.component";
   selector: 'app-perfil',
   templateUrl: './perfil.page.html',
   styleUrls: ['./perfil.page.scss'],
-  imports: [IonContent, CommonModule, FormsModule, IonButton, IonRouterLink, RouterLink, HeaderComponent, IonToggle, IonIcon, IonList, IonItem]
+  imports: [IonContent, CommonModule, FormsModule, IonButton, IonRouterLink, RouterLink, HeaderComponent, IonToggle, IonIcon, IonList, IonItem, IonLabel]
 })
 export class PerfilPage {
 

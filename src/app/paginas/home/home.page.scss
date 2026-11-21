@@ -59,3 +59,17 @@ ion-icon {
     white-space: nowrap;
   }
 }
+
+button {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 0px auto;
+
+  background-color: var(--ion-color-primary);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}

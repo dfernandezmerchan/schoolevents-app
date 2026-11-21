@@ -22,4 +22,23 @@ export class CalendarioComponent {
     }
   }
 
+  fechasConEventos = [
+    {
+      date: '2026-11-25',
+      textColor: 'var(--ion-color-primary-contrast)',
+      backgroundColor: 'var(--ion-color-secondary)'
+    },
+    {
+      date: '2026-12-02',
+      textColor: 'var(--ion-color-primary-contrast)',
+      backgroundColor: 'var(--ion-color-secondary)'
+    },
+    {
+      date: '2026-12-18',
+      textColor: 'var(--ion-color-primary-contrast)',
+      backgroundColor: 'var(--ion-color-secondary)'
+    }
+  ];
+
+
 }

@@ -1,116 +1,126 @@
-
-<app-header titulo="Perfil"></app-header>
-
 <ion-content [fullscreen]="true">
 
-  <div class="profile-card">
+  <div class="cabecera-perfil">
 
-    <div class="profile-header">
-      <img
-        src="https://via.placeholder.com/100"
-        alt="Avatar de usuario"
-        class="avatar"
-      />
-
-      <h2>Nombre de Usuario</h2>
-      <span class="role-badge">Rol de usuario</span>
+    <!-- Avatar -->
+    <div class="avatar">
+      D
     </div>
 
-    <div class="profile-body">
+    <!-- Datos del usuario -->
+    <h2>Daniel Fernández</h2>
+    <p>daniel&#64;schoolevents.es</p>
 
-      @if (!isEditing) {
+    <!-- Estadísticas -->
+    <div class="estadisticas">
 
-        <!-- VISTA LECTURA -->
-        <div class="field-group">
-          <label>Correo electrónico</label>
-          <p>usuario&#64;ejemplo.com</p>
-        </div>
+      <div>
+        <strong>2º</strong>
+        <span>DAM</span>
+      </div>
 
-        <div class="field-group">
-          <label>Biografía</label>
-          <p>
-            Aquí irá la biografía del usuario. Este espacio muestra
-            la información completa cargada desde la interfaz visual.
-          </p>
-        </div>
+      <div>
+        <strong>8</strong>
+        <span>Eventos</span>
+      </div>
 
-        <button
-          type="button"
-          class="btn btn-primary"
-          (click)="toggleEdit()">
-          Editar perfil
-        </button>
-
-      } @else {
-
-        <!-- VISTA EDICIÓN -->
-        <form (ngSubmit)="toggleEdit()">
-
-          <div class="field-group">
-            <label for="name">Nombre</label>
-            <input
-              id="name"
-              type="text"
-              value="Nombre de Usuario"
-              placeholder="Tu nombre"
-            />
-          </div>
-
-          <div class="field-group">
-            <label for="email">Correo electrónico</label>
-            <input
-              id="email"
-              type="email"
-              value="usuario@ejemplo.com"
-              placeholder="tu@email.com"
-            />
-          </div>
-
-          <div class="field-group">
-            <label for="bio">Biografía</label>
-            <textarea
-              id="bio"
-              rows="3"
-              placeholder="Escribe algo sobre ti..."
-            >Aquí irá la biografía del usuario.</textarea>
-          </div>
-
-          <div class="actions">
-            <button type="submit" class="btn btn-success">
-              Guardar
-            </button>
-
-            <button
-              type="button"
-              class="btn btn-secondary"
-              (click)="toggleEdit()">
-              Cancelar
-            </button>
-          </div>
-
-        </form>
-
-      }
+      <div>
+        <strong>4</strong>
+        <span>Favoritos</span>
+      </div>
 
     </div>
+
   </div>
 
+
+  <!-- PREFERENCIAS -->
+  <p class="titulo-grupo">Preferencias</p>
+
   <ion-list [inset]="true">
+
+    <!-- Modo oscuro -->
     <ion-item>
-      <ion-icon slot="start" name="moon-outline"></ion-icon>
-      <ion-toggle (ionChange)="cambiarTema($event)">Modo oscuro</ion-toggle>
+
+      <ion-icon
+        slot="start"
+        name="moon-outline">
+      </ion-icon>
+
+      <ion-label>
+        Modo oscuro
+      </ion-label>
+
+      <ion-toggle
+        slot="end"
+        (ionChange)="cambiarTema($event)">
+      </ion-toggle>
+
     </ion-item>
+
+
+    <!-- Notificaciones -->
+    <ion-item>
+
+      <ion-icon
+        slot="start"
+        name="notifications-outline">
+      </ion-icon>
+
+      <ion-label>
+        Notificaciones
+      </ion-label>
+
+      <ion-toggle
+        slot="end"
+        [checked]="true">
+      </ion-toggle>
+
+    </ion-item>
+
+
+    <!-- Acerca de -->
+    <ion-item
+      [button]="true"
+      [detail]="true">
+
+      <ion-icon
+        slot="start"
+        name="information-circle-outline">
+      </ion-icon>
+
+      <ion-label>
+        Acerca de SchoolEvents
+      </ion-label>
+
+    </ion-item>
+
   </ion-list>
 
 
-  <ion-button
-    color="danger"
-    fill="outline"
-    expand="block"
-    routerLink="/login">
-    Cerrar sesión
-  </ion-button>
+  <!-- CUENTA -->
+  <p class="titulo-grupo">Cuenta</p>
 
+  <ion-list [inset]="true">
 
+    <ion-item
+      [button]="true"
+      class="salir"
+      routerLink="/login"
+      routerDirection="root">
+
+      <ion-icon
+        slot="start"
+        name="log-out-outline"
+        color="danger">
+      </ion-icon>
+
+      <ion-label color="danger">
+        Cerrar sesión
+      </ion-label>
+
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>
