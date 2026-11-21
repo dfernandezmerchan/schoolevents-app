@@ -20,7 +20,7 @@ import {DatePipe} from "@angular/common";
 export class TarjetaeventocomprimidaComponent  implements OnInit {
 
   constructor() { }
-  @Input() evento?: Evento;
+  @Input() evento!: Evento;
 
   ngOnInit() {}
 

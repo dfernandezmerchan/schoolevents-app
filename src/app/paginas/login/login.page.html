@@ -1,14 +1,40 @@
-<ion-content class="ion-padding">
-  <div class="centrado">
+<ion-content>
+
+  <div class="login-container">
+
+    <div class="logo">
+      <div class="logo-icon">S</div>
+    </div>
+
     <h1>School Events</h1>
-    <p>Inicia sesión para continuar</p>
-    <ion-input label="Correo electrónico" labelPlacement="floating" type="email"></ion-input>
-    <ion-input label="Contraseña" labelPlacement="floating" type="password"></ion-input>
-    <ion-button expand="block" routerLink="/app/home" routerDirection="root">
-      Entrar
-    </ion-button>
-    <ion-button expand="block" routerLink="/registro" routerDirection="root">
-      Registrarse
-    </ion-button>
+    <p class="subtitulo">Inicia sesión para continuar</p>
+
+    <div class="formulario">
+
+      <ion-input
+        label="Correo electrónico"
+        labelPlacement="floating"
+        type="email"
+        fill="outline">
+      </ion-input>
+
+      <ion-input
+        label="Contraseña"
+        labelPlacement="floating"
+        type="password"
+        fill="outline">
+      </ion-input>
+
+      <ion-button
+        expand="block"
+        routerLink="/app/home"
+        routerDirection="root">
+        Entrar
+      </ion-button>
+
+    </div>
+
   </div>
+
 </ion-content>
+

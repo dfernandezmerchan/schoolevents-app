@@ -1,10 +1,14 @@
+ion-tab-bar {
+  --background: var(--ion-background-color);
+}
+
 ion-tab-button {
   --color: var(--ion-color-medium);
-  --color-selected: #ffffff;
+  --color-selected: var(--ion-color-primary-contrast);
 }
 
 ion-tab-button.tab-selected {
-  background: var(--ion-color-dark);
+  background: var(--ion-color-primary);
   border-radius: 20px;
   animation: aparecer 0.25s ease;
 }
