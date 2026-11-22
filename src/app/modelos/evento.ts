@@ -7,6 +7,8 @@ export interface Evento {
   estado: 'BORRADOR' | 'PUBLICADO' | 'FINALIZADO' | 'CANCELADO';
   fechalimite?: string;
 
+  imagen: string;
+
   lugar: Lugar;
   categoria: Categoria;
   organizador: Usuario;

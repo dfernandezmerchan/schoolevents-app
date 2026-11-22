@@ -1,6 +1,7 @@
 import { Evento } from '../modelos/evento';
 
 export const eventos: Evento[] = [
+
   {
     id: 1,
     titulo: 'Torneo de fútbol sala',
@@ -9,6 +10,8 @@ export const eventos: Evento[] = [
     fechafin: '2026-11-25T14:00:00',
     estado: 'PUBLICADO',
     fechalimite: '2026-11-24T23:59:59',
+
+    imagen: 'assets/img/torneofutbolsala/1.jpg',
 
     lugar: {
       id: 1,
@@ -63,6 +66,8 @@ export const eventos: Evento[] = [
     estado: 'PUBLICADO',
     fechalimite: '2026-12-01T23:59:59',
 
+    imagen: 'assets/img/charladesarrollo/1.png',
+
     lugar: {
       id: 2,
       nombre: 'Salón de actos',
@@ -111,6 +116,8 @@ export const eventos: Evento[] = [
     estado: 'PUBLICADO',
     fechalimite: '2026-12-17T23:59:59',
 
+    imagen: 'assets/img/fiestanavidad/1.png',
+
     lugar: {
       id: 3,
       nombre: 'Patio principal',
@@ -154,4 +161,5 @@ export const eventos: Evento[] = [
       }
     ]
   }
+
 ];
