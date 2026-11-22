@@ -1,0 +1,119 @@
+ion-content {
+  --background: var(--ion-background-color);
+}
+
+/* CABECERA */
+
+.cabecera {
+  padding: 20px;
+}
+
+.cabecera h1 {
+  margin: 0;
+  color: var(--ion-text-color);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.cabecera p {
+  margin: 5px 0 15px;
+  color: var(--ion-color-medium);
+  font-size: 14px;
+}
+
+/* CONTADOR */
+
+.contador {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: rgba(32, 201, 151, 0.15);
+  color: var(--ion-color-success);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contador ion-icon {
+  font-size: 18px;
+}
+
+/* LISTA */
+
+.lista {
+  padding: 0 15px 20px;
+}
+
+/* PERSONA */
+
+.persona {
+  display: flex;
+  align-items: center;
+  padding: 13px;
+  margin-bottom: 10px;
+
+  background: var(--ion-card-background);
+  border: 1px solid var(--ion-color-light-shade);
+  border-radius: 14px;
+}
+
+/* POSICIÓN */
+
+.posicion {
+  width: 25px;
+  color: var(--ion-color-medium);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* AVATAR */
+
+.avatar {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 8px;
+
+  border-radius: 50%;
+  background: var(--ion-color-primary);
+  color: var(--ion-color-primary-contrast);
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* DATOS */
+
+.datos {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.datos h3 {
+  margin: 0 0 4px;
+
+  color: var(--ion-text-color);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.datos p {
+  margin: 0;
+
+  color: var(--ion-color-medium);
+  font-size: 13px;
+}
+
+/* ICONO ASISTENCIA */
+
+.icono-asistira {
+  color: var(--ion-color-success);
+  font-size: 21px;
+  margin-left: 8px;
+}

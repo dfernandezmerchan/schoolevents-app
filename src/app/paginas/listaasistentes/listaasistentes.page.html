@@ -1,13 +1,99 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>listaasistentes</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="Lista de asistentes"></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">listaasistentes</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
+  <div class="cabecera">
+    <h1>Asistentes</h1>
+    <p>Personas inscritas en el evento</p>
+
+    <div class="contador">
+      <ion-icon name="people-outline"></ion-icon>
+      <span>5 asistentes</span>
+    </div>
+  </div>
+
+  <div class="lista">
+
+    <div class="persona">
+      <div class="posicion">1</div>
+
+      <div class="avatar">D</div>
+
+      <div class="datos">
+        <h3>Daniel Fernández</h3>
+        <p>1º DAM</p>
+      </div>
+
+      <ion-icon
+        class="icono-asistira"
+        name="checkmark-circle-outline">
+      </ion-icon>
+    </div>
+
+    <div class="persona">
+      <div class="posicion">2</div>
+
+      <div class="avatar">L</div>
+
+      <div class="datos">
+        <h3>Lucía García</h3>
+        <p>1º DAM</p>
+      </div>
+
+      <ion-icon
+        class="icono-asistira"
+        name="checkmark-circle-outline">
+      </ion-icon>
+    </div>
+
+    <div class="persona">
+      <div class="posicion">3</div>
+
+      <div class="avatar">M</div>
+
+      <div class="datos">
+        <h3>Marcos López</h3>
+        <p>2º DAM</p>
+      </div>
+
+      <ion-icon
+        class="icono-asistira"
+        name="checkmark-circle-outline">
+      </ion-icon>
+    </div>
+
+    <div class="persona">
+      <div class="posicion">4</div>
+
+      <div class="avatar">A</div>
+
+      <div class="datos">
+        <h3>Ana Martínez</h3>
+        <p>1º DAW</p>
+      </div>
+
+      <ion-icon
+        class="icono-asistira"
+        name="checkmark-circle-outline">
+      </ion-icon>
+    </div>
+
+    <div class="persona">
+      <div class="posicion">5</div>
+
+      <div class="avatar">J</div>
+
+      <div class="datos">
+        <h3>Javier Sánchez</h3>
+        <p>2º DAM</p>
+      </div>
+
+      <ion-icon
+        class="icono-asistira"
+        name="checkmark-circle-outline">
+      </ion-icon>
+    </div>
+
+  </div>
+
 </ion-content>
