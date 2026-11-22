@@ -4,13 +4,10 @@ import { FormsModule } from '@angular/forms';
 import {
   IonButton,
   IonContent,
-  IonHeader,
   IonIcon,
   IonInput,
   IonItem, IonSelect,
-  IonSelectOption, IonTextarea,
-  IonTitle,
-  IonToolbar
+  IonSelectOption, IonTextarea
 } from '@ionic/angular';
 import {HeaderComponent} from "../../componentes/header/header.component";
 
@@ -18,7 +15,7 @@ import {HeaderComponent} from "../../componentes/header/header.component";
   selector: 'app-crearevento',
   templateUrl: './crearevento.page.html',
   styleUrls: ['./crearevento.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButton, IonIcon, IonInput, IonItem, IonSelectOption, IonSelect, IonTextarea, HeaderComponent]
+  imports: [IonContent, CommonModule, FormsModule, IonButton, IonIcon, IonInput, IonItem, IonSelectOption, IonSelect, IonTextarea, HeaderComponent]
 })
 export class CreareventoPage implements OnInit {
 

@@ -6,8 +6,10 @@
 
 
   <div class="busquedayfiltros">
-    <ion-searchbar></ion-searchbar>
-
+    <ion-searchbar
+      placeholder="Buscar eventos..."
+      (ionInput)="buscarEvento($event)">
+    </ion-searchbar>
     <ion-button id="click-trigger">Filtrar</ion-button>
     <ion-popover trigger="click-trigger" triggerAction="click">
       <ng-template>
@@ -32,10 +34,18 @@
 
   </ion-segment>
 
-  @for (evento of eventos; track evento.id) {
+  @for (evento of eventosFiltrados; track evento.id) {
     <app-tarjetaevento
       [evento]="evento">
     </app-tarjetaevento>
+  }
+
+  @if (eventosFiltrados.length === 0) {
+    <div class="sin-eventos">
+      <ion-icon name="search-outline"></ion-icon>
+      <h2>No se han encontrado eventos</h2>
+      <p>Prueba con otro término de búsqueda.</p>
+    </div>
   }
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">

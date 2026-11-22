@@ -47,10 +47,22 @@ export class HomePage {
 
   eventos: Evento[] = eventos;
 
+  eventosFiltrados: Evento[] = eventos;
+
   constructor() {
     addIcons({
       addOutline
     });
+  }
+
+  buscarEvento(event: any) {
+
+    const texto = event.detail.value.toLowerCase();
+
+    this.eventosFiltrados = this.eventos.filter(evento =>
+      evento.titulo.toLowerCase().includes(texto)
+    );
+
   }
 
 }
