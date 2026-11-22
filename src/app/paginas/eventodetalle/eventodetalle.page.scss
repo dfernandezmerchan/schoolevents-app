@@ -309,3 +309,19 @@ ion-content {
   color: white;
   font-size: 14px;
 }
+
+.numero-plazas {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 20px;
+
+  strong {
+    font-size: 28px;
+  }
+
+  span {
+    font-size: 14px;
+    color: var(--ion-color-medium);
+  }
+}

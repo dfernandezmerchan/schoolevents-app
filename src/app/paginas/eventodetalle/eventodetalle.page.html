@@ -112,9 +112,14 @@
           <div class="lista-cursos">
             @for (curso of evento.cursos; track curso.id) {
               <span class="curso">
-        {{ curso.nombre }}
-      </span>
+                {{ curso.nombre }}
+              </span>
             }
+          </div>
+
+          <div class="numero-plazas">
+            <strong>25</strong>
+            <span>plazas libres</span>
           </div>
 
         </div>
