@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import {
   IonButton,
-  IonContent,
+  IonContent, IonFab, IonFabButton, IonFabList,
   IonIcon,
   IonModal
 } from '@ionic/angular';
@@ -14,13 +14,14 @@ import {
   heartOutline,
   location,
   alertCircleOutline,
-  checkmarkCircleOutline
+  checkmarkCircleOutline, listOutline, peopleOutline, checkmarkOutline
 } from 'ionicons/icons';
 
 import { HeaderComponent } from "../../componentes/header/header.component";
 import { FotoeventoComponent } from "../../componentes/fotoevento/fotoevento.component";
 import { Evento } from '../../modelos/evento';
 import { eventos } from "../../datos/evento";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-eventodetalle',
@@ -34,7 +35,11 @@ import { eventos } from "../../datos/evento";
     IonButton,
     HeaderComponent,
     FotoeventoComponent,
-    IonModal
+    IonModal,
+    IonFab,
+    IonFabButton,
+    IonFabList,
+    RouterLink
   ]
 })
 export class EventodetallePage implements OnInit {
@@ -44,7 +49,10 @@ export class EventodetallePage implements OnInit {
       heartOutline,
       location,
       alertCircleOutline,
-      checkmarkCircleOutline
+      checkmarkCircleOutline,
+      peopleOutline,
+      checkmarkOutline,
+      listOutline
     });
   }
 

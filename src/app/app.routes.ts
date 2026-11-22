@@ -59,6 +59,14 @@ export const routes: Routes = [
 
     ],
   },
+  {
+    path: 'listaasistentes',
+    loadComponent: () => import('./paginas/listaasistentes/listaasistentes.page').then( m => m.ListaasistentesPage)
+  },
+  {
+    path: 'listaespera',
+    loadComponent: () => import('./paginas/listaespera/listaespera.page').then( m => m.ListaesperaPage)
+  },
 
 
 
