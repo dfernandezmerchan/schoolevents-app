@@ -1,7 +1,7 @@
 import { Component, OnInit, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { alertCircleOutline } from 'ionicons/icons';
+
 import {
   IonButton,
   IonContent,
@@ -10,12 +10,17 @@ import {
 } from '@ionic/angular';
 
 import { addIcons } from 'ionicons';
-import {heartOutline, location} from 'ionicons/icons';
+import {
+  heartOutline,
+  location,
+  alertCircleOutline,
+  checkmarkCircleOutline
+} from 'ionicons/icons';
 
 import { HeaderComponent } from "../../componentes/header/header.component";
-import {FotoeventoComponent} from "../../componentes/fotoevento/fotoevento.component";
+import { FotoeventoComponent } from "../../componentes/fotoevento/fotoevento.component";
 import { Evento } from '../../modelos/evento';
-import {eventos} from "../../datos/evento";
+import { eventos } from "../../datos/evento";
 
 @Component({
   selector: 'app-eventodetalle',
@@ -29,7 +34,7 @@ import {eventos} from "../../datos/evento";
     IonButton,
     HeaderComponent,
     FotoeventoComponent,
-    IonModal,
+    IonModal
   ]
 })
 export class EventodetallePage implements OnInit {
@@ -38,11 +43,14 @@ export class EventodetallePage implements OnInit {
     addIcons({
       heartOutline,
       location,
-      alertCircleOutline
+      alertCircleOutline,
+      checkmarkCircleOutline
     });
   }
 
   id = input<string>();
+
+  inscrito = false;
 
   get evento(): Evento | undefined {
     return eventos.find(e => e.id === Number(this.id()));
@@ -53,6 +61,10 @@ export class EventodetallePage implements OnInit {
 
   modalAbierto = false;
 
+  inscribirse() {
+    this.inscrito = true;
+  }
+
   abrirModal() {
     this.modalAbierto = true;
   }
@@ -62,6 +74,7 @@ export class EventodetallePage implements OnInit {
   }
 
   cancelarInscripcion() {
+    this.inscrito = false;
     this.modalAbierto = false;
   }
 
