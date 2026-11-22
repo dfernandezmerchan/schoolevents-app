@@ -1,13 +1,99 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>listaespera</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="Lista de espera"></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">listaespera</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
+  <div class="cabecera">
+    <h1>Lista de espera</h1>
+    <p>Personas esperando para entrar al evento</p>
+
+    <div class="contador">
+      <ion-icon name="time-outline"></ion-icon>
+      <span>5 personas en espera</span>
+    </div>
+  </div>
+
+  <div class="lista">
+
+    <div class="persona">
+      <div class="posicion">1</div>
+
+      <div class="avatar">C</div>
+
+      <div class="datos">
+        <h3>Carlos Rodríguez</h3>
+        <p>1º DAM</p>
+      </div>
+
+      <ion-icon
+        class="icono-espera"
+        name="time-outline">
+      </ion-icon>
+    </div>
+
+    <div class="persona">
+      <div class="posicion">2</div>
+
+      <div class="avatar">M</div>
+
+      <div class="datos">
+        <h3>María López</h3>
+        <p>1º DAW</p>
+      </div>
+
+      <ion-icon
+        class="icono-espera"
+        name="time-outline">
+      </ion-icon>
+    </div>
+
+    <div class="persona">
+      <div class="posicion">3</div>
+
+      <div class="avatar">P</div>
+
+      <div class="datos">
+        <h3>Pablo García</h3>
+        <p>2º DAM</p>
+      </div>
+
+      <ion-icon
+        class="icono-espera"
+        name="time-outline">
+      </ion-icon>
+    </div>
+
+    <div class="persona">
+      <div class="posicion">4</div>
+
+      <div class="avatar">S</div>
+
+      <div class="datos">
+        <h3>Sofía Martín</h3>
+        <p>1º DAM</p>
+      </div>
+
+      <ion-icon
+        class="icono-espera"
+        name="time-outline">
+      </ion-icon>
+    </div>
+
+    <div class="persona">
+      <div class="posicion">5</div>
+
+      <div class="avatar">D</div>
+
+      <div class="datos">
+        <h3>David Sánchez</h3>
+        <p>2º DAW</p>
+      </div>
+
+      <ion-icon
+        class="icono-espera"
+        name="time-outline">
+      </ion-icon>
+    </div>
+
+  </div>
+
 </ion-content>

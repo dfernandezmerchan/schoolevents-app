@@ -57,16 +57,18 @@ export const routes: Routes = [
         loadComponent: () => import('./paginas/error404/error404.page').then( m => m.Error404Page)
       },
 
+      {
+        path: 'listaasistentes',
+        loadComponent: () => import('./paginas/listaasistentes/listaasistentes.page').then( m => m.ListaasistentesPage)
+      },
+      {
+        path: 'listaespera',
+        loadComponent: () => import('./paginas/listaespera/listaespera.page').then( m => m.ListaesperaPage)
+      },
+
     ],
   },
-  {
-    path: 'listaasistentes',
-    loadComponent: () => import('./paginas/listaasistentes/listaasistentes.page').then( m => m.ListaasistentesPage)
-  },
-  {
-    path: 'listaespera',
-    loadComponent: () => import('./paginas/listaespera/listaespera.page').then( m => m.ListaesperaPage)
-  },
+
 
 
 
