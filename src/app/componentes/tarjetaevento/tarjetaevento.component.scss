@@ -8,12 +8,16 @@ ion-card {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 
   background: var(--ion-color-light);
+
+  color: var(--ion-text-color);
 }
 
 /* Cabecera */
 
 ion-item {
   --background: var(--ion-color-light);
+  --color: var(--ion-text-color);
+
   padding: 0 5px;
 }
 
@@ -42,11 +46,15 @@ ion-label h2 {
   font-size: 14px;
   font-weight: bold;
   margin: 0;
+
+  color: var(--ion-text-color);
 }
 
 ion-label p {
   font-size: 11px;
   margin: 2px 0;
+
+  color: var(--ion-color-medium);
 }
 
 /* Imagen */
@@ -61,22 +69,29 @@ ion-card > img {
 
 ion-card-content {
   padding: 10px;
+  color: var(--ion-text-color);
 }
 
 ion-card-content h2 {
   font-size: 14px;
   font-weight: bold;
   margin: 0 0 5px;
+
+  color: var(--ion-text-color);
 }
 
 ion-card-content p {
   font-size: 11px;
   margin: 3px 0;
+
+  color: var(--ion-color-medium);
 }
 
 .descripcion {
   margin-top: 10px !important;
   line-height: 1.4;
+
+  color: var(--ion-text-color) !important;
 }
 
 /* Parte inferior */
@@ -85,11 +100,13 @@ ion-card-content p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   margin-top: 12px;
 }
 
 .parte-inferior ion-button {
   --border-radius: 5px;
+
   font-size: 11px;
 }
 
