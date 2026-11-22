@@ -1,17 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular';
+import {IonButton, IonContent, IonIcon} from '@ionic/angular';
+import {homeOutline, searchOutline} from "ionicons/icons";
+import {addIcons} from "ionicons";
 
 @Component({
   selector: 'app-error404',
   templateUrl: './error404.page.html',
   styleUrls: ['./error404.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonContent, CommonModule, FormsModule, IonIcon, IonButton]
 })
 export class Error404Page implements OnInit {
 
-  constructor() { }
+  constructor() {
+    addIcons({
+      searchOutline,
+      homeOutline
+    });
+  }
 
   ngOnInit() {
   }

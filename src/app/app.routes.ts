@@ -52,14 +52,14 @@ export const routes: Routes = [
         loadComponent: () => import('./paginas/crearevento/crearevento.page').then( m => m.CreareventoPage)
       },
 
-
+      {
+        path: 'error404',
+        loadComponent: () => import('./paginas/error404/error404.page').then( m => m.Error404Page)
+      },
 
     ],
   },
-  {
-    path: 'error404',
-    loadComponent: () => import('./paginas/error404/error404.page').then( m => m.Error404Page)
-  },
+
 
 
 
