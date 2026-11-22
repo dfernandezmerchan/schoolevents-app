@@ -12,7 +12,6 @@ import {DatePipe} from "@angular/common";
     IonCard,
     IonCardContent,
     IonButton,
-    IonIcon,
     RouterLink,
     DatePipe
   ],

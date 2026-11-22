@@ -14,7 +14,6 @@ import {heartOutline, location} from 'ionicons/icons';
 import { HeaderComponent } from "../../componentes/header/header.component";
 import {FotoeventoComponent} from "../../componentes/fotoevento/fotoevento.component";
 import { Evento } from '../../modelos/evento';
-import {ActivatedRoute} from "@angular/router";
 import {eventos} from "../../datos/evento";
 
 @Component({

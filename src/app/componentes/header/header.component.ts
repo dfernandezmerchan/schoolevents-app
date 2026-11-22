@@ -1,8 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {IonBackButton, IonButton, IonButtons, IonHeader, IonIcon, IonTitle, IonToolbar} from "@ionic/angular";
-import {Router, RouterLink} from "@angular/router";
-// @ts-ignore
-// @ts-ignore
+import {RouterLink} from "@angular/router";
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',

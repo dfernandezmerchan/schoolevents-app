@@ -14,7 +14,7 @@ import {eventos} from "../../datos/evento";
   selector: 'app-calendario-page',
   templateUrl: './calendario.page.html',
   styleUrls: ['./calendario.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, CalendarioComponent, TarjetaeventoComponent, TarjetaeventocomprimidaComponent, HeaderComponent],
+  imports: [IonContent, IonHeader, CommonModule, FormsModule, CalendarioComponent, TarjetaeventocomprimidaComponent, HeaderComponent],
 })
 export class CalendarioPage {
 

@@ -56,6 +56,10 @@ export const routes: Routes = [
 
     ],
   },
+  {
+    path: 'error404',
+    loadComponent: () => import('./paginas/error404/error404.page').then( m => m.Error404Page)
+  },
 
 
 

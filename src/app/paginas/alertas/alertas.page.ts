@@ -18,7 +18,7 @@ import {HeaderComponent} from "../../componentes/header/header.component";
   selector: 'app-alertas',
   templateUrl: './alertas.page.html',
   styleUrls: ['./alertas.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButtons, IonBackButton, IonSegment, IonSegmentButton, IonLabel, IonList, IonItem, IonIcon, NotificacionComponent, HeaderComponent]
+  imports: [IonContent, IonHeader, CommonModule, FormsModule, IonSegment, IonSegmentButton, IonLabel, IonList, NotificacionComponent, HeaderComponent]
 })
 export class AlertasPage implements OnInit {
 

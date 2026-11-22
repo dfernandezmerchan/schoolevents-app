@@ -1,24 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import {
-  IonButton,
   IonContent,
-  IonHeader,
   IonIcon, IonItem, IonLabel, IonList,
   IonRouterLink,
-  IonTitle,
   IonToggle,
-  IonToolbar, ToggleCustomEvent
+  ToggleCustomEvent
 } from '@ionic/angular';
-import {HeaderComponent} from "../../componentes/header/header.component";
 
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.page.html',
   styleUrls: ['./perfil.page.scss'],
-  imports: [IonContent, CommonModule, FormsModule, IonButton, IonRouterLink, RouterLink, HeaderComponent, IonToggle, IonIcon, IonList, IonItem, IonLabel]
+  imports: [IonContent, CommonModule, FormsModule, IonRouterLink, RouterLink, IonToggle, IonIcon, IonList, IonItem, IonLabel]
 })
 export class PerfilPage {
 

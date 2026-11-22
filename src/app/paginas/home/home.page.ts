@@ -24,7 +24,7 @@ import {RouterLink} from "@angular/router";
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonHeader, IonToolbar, IonContent, IonButton, IonSearchbar, TarjetaeventoComponent, IonSegment, IonSegmentButton, IonLabel, IonPopover, HeaderComponent, NgForOf, IonIcon, RouterLink],
+  imports: [IonContent, IonButton, IonSearchbar, TarjetaeventoComponent, IonSegment, IonSegmentButton, IonLabel, IonPopover, HeaderComponent, RouterLink],
 })
 export class HomePage {
   constructor() {
