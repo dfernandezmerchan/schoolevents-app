@@ -1,36 +1,56 @@
 import { Component } from '@angular/core';
 import {
-  IonHeader,
-  IonToolbar,
-  IonTitle,
   IonContent,
   IonButton,
   IonIcon,
   IonSearchbar,
-  IonCard,
-  IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonSegment, IonSegmentButton, IonLabel, IonPopover
+  IonSegment,
+  IonSegmentButton,
+  IonLabel,
+  IonPopover,
+  IonFab,
+  IonFabButton
 } from '@ionic/angular';
-import {addIcons} from "ionicons";
-import {water} from "ionicons/icons";
+
+import { addIcons } from 'ionicons';
+import { addOutline } from 'ionicons/icons';
+
 import { HeaderComponent } from "../../componentes/header/header.component";
-import {TarjetaeventoComponent} from "../../componentes/tarjetaevento/tarjetaevento.component";
+import { TarjetaeventoComponent } from "../../componentes/tarjetaevento/tarjetaevento.component";
 
 import { Evento } from '../../modelos/evento';
 import { eventos } from '../../datos/evento';
-import {NgForOf} from "@angular/common";
-import {RouterLink} from "@angular/router";
+
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonContent, IonButton, IonSearchbar, TarjetaeventoComponent, IonSegment, IonSegmentButton, IonLabel, IonPopover, HeaderComponent, RouterLink],
+  imports: [
+    IonContent,
+    IonButton,
+    IonIcon,
+    IonSearchbar,
+    TarjetaeventoComponent,
+    IonSegment,
+    IonSegmentButton,
+    IonLabel,
+    IonPopover,
+    IonFab,
+    IonFabButton,
+    HeaderComponent,
+    RouterLink
+  ],
 })
 export class HomePage {
-  constructor() {
-    addIcons({ water });
-  }
 
   eventos: Evento[] = eventos;
+
+  constructor() {
+    addIcons({
+      addOutline
+    });
+  }
 
 }

@@ -1,5 +1,48 @@
 <app-header titulo="Detalle del evento"></app-header>
 
+<ion-modal [isOpen]="modalAbierto" (didDismiss)="cerrarModal">
+  <ng-template>
+
+    <ion-content class="modal-contenido">
+
+      <div class="contenido-modal">
+
+        <div class="modal-icono">
+          <ion-icon name="alert-circle-outline"></ion-icon>
+        </div>
+
+        <h2>¿Cancelar inscripción?</h2>
+
+        <p>
+          ¿Estás seguro de que quieres cancelar tu inscripción en este evento?
+        </p>
+
+        <div class="modal-botones">
+
+          <ion-button
+            expand="block"
+            fill="outline"
+            (click)="cerrarModal()">
+            Volver
+          </ion-button>
+
+          <ion-button
+            expand="block"
+            color="danger"
+            (click)="cancelarInscripcion()">
+            Cancelar inscripción
+          </ion-button>
+
+        </div>
+
+      </div>
+
+    </ion-content>
+
+  </ng-template>
+</ion-modal>
+
+
 <ion-content>
 
   @if (evento) {
@@ -60,6 +103,10 @@
         <!-- Botón -->
         <ion-button expand="block" class="boton-inscribirse">
           Inscribirse
+        </ion-button>
+
+        <ion-button expand="block" fill="outline" class="boton-cancelar" (click)="abrirModal()">
+          Cancelar inscripción
         </ion-button>
 
       </div>

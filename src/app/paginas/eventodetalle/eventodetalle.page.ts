@@ -1,11 +1,12 @@
 import { Component, OnInit, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
+import { alertCircleOutline } from 'ionicons/icons';
 import {
   IonButton,
   IonContent,
-  IonIcon
+  IonIcon,
+  IonModal
 } from '@ionic/angular';
 
 import { addIcons } from 'ionicons';
@@ -28,6 +29,7 @@ import {eventos} from "../../datos/evento";
     IonButton,
     HeaderComponent,
     FotoeventoComponent,
+    IonModal,
   ]
 })
 export class EventodetallePage implements OnInit {
@@ -35,7 +37,8 @@ export class EventodetallePage implements OnInit {
   constructor() {
     addIcons({
       heartOutline,
-      location
+      location,
+      alertCircleOutline
     });
   }
 
@@ -46,6 +49,20 @@ export class EventodetallePage implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  modalAbierto = false;
+
+  abrirModal() {
+    this.modalAbierto = true;
+  }
+
+  cerrarModal() {
+    this.modalAbierto = false;
+  }
+
+  cancelarInscripcion() {
+    this.modalAbierto = false;
   }
 
 }

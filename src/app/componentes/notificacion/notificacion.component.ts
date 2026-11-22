@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {IonIcon, IonItem, IonLabel} from "@ionic/angular";
 import {RouterLink} from "@angular/router";
+import {addIcons} from "ionicons";
+import {homeOutline, searchOutline, timeOutline} from "ionicons/icons";
 
 @Component({
   selector: 'app-notificacion',
@@ -15,7 +17,12 @@ import {RouterLink} from "@angular/router";
 })
 export class NotificacionComponent  implements OnInit {
 
-  constructor() { }
+  constructor() {
+    addIcons({
+      timeOutline
+    });
+
+  }
 
   ngOnInit() {}
 

@@ -12,12 +12,13 @@ import {
   IonTitle,
   IonToolbar
 } from '@ionic/angular';
+import {HeaderComponent} from "../../componentes/header/header.component";
 
 @Component({
   selector: 'app-crearevento',
   templateUrl: './crearevento.page.html',
   styleUrls: ['./crearevento.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButton, IonIcon, IonInput, IonItem, IonSelectOption, IonSelect, IonTextarea]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButton, IonIcon, IonInput, IonItem, IonSelectOption, IonSelect, IonTextarea, HeaderComponent]
 })
 export class CreareventoPage implements OnInit {
 

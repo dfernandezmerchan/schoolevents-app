@@ -4,9 +4,7 @@
 
 <ion-content class="ion-padding" [fullscreen]="true">
 
-  <button routerLink="/app/crearevento">
-    + Crear evento
-  </button>
+
   <div class="busquedayfiltros">
     <ion-searchbar></ion-searchbar>
 
@@ -39,4 +37,11 @@
       [evento]="evento">
     </app-tarjetaevento>
   }
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/app/crearevento">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 </ion-content>

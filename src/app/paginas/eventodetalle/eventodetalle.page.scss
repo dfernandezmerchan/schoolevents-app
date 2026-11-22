@@ -2,6 +2,7 @@ ion-content {
   --background: var(--ion-background-color);
 }
 
+
 /* CABECERA DEL EVENTO */
 
 .cabecera-evento {
@@ -64,6 +65,7 @@ ion-content {
   font-size: 38px;
 }
 
+
 /* IMAGEN */
 
 .imagen-evento {
@@ -74,6 +76,7 @@ ion-content {
 
   display: block;
 }
+
 
 /* INFORMACIÓN */
 
@@ -118,6 +121,7 @@ ion-content {
   font-size: 17px;
 }
 
+
 /* DESCRIPCIÓN */
 
 .descripcion {
@@ -129,7 +133,8 @@ ion-content {
   margin-top: 15px;
 }
 
-/* BOTÓN */
+
+/* BOTÓN INSCRIBIRSE */
 
 .boton-inscribirse {
   --background: var(--ion-color-primary);
@@ -142,6 +147,7 @@ ion-content {
 
   margin-top: 18px;
 }
+
 
 /* FOTOS */
 
@@ -170,4 +176,103 @@ ion-content {
 
   object-fit: cover;
   border-radius: 10px;
+}
+
+
+/* BOTÓN CANCELAR INSCRIPCIÓN */
+
+.boton-cancelar {
+  --border-color: var(--ion-color-danger);
+  --color: var(--ion-color-danger);
+  --border-radius: 6px;
+
+  height: 46px;
+  margin-top: 10px;
+
+  font-size: 15px;
+  text-transform: none;
+}
+
+
+/* MODAL */
+
+.modal-contenido {
+  --background: var(--ion-background-color);
+
+  text-align: center;
+  padding: 30px 25px;
+}
+
+.modal-contenido::part(scroll) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100%;
+}
+
+.contenido-modal {
+  width: 100%;
+  max-width: 400px;
+
+  text-align: center;
+}
+
+
+/* ICONO DEL MODAL */
+
+.modal-icono {
+  width: 60px;
+  height: 60px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(240, 68, 104, 0.12);
+}
+
+.modal-icono ion-icon {
+  font-size: 32px;
+  color: var(--ion-color-danger);
+}
+
+
+/* TEXTO DEL MODAL */
+
+.modal-contenido h2 {
+  margin: 10px 0;
+
+  color: var(--ion-text-color);
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.modal-contenido p {
+  margin: 0;
+
+  color: var(--ion-color-medium);
+
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+
+/* BOTONES DEL MODAL */
+
+.modal-botones {
+  margin-top: 25px;
+}
+
+.modal-botones ion-button {
+  --border-radius: 10px;
+
+  height: 45px;
+
+  margin-bottom: 8px;
 }
