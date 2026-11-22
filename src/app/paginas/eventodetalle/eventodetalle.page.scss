@@ -276,3 +276,36 @@ ion-content {
 
   margin-bottom: 8px;
 }
+
+.cursos-evento {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: var(--ion-color-light);
+}
+
+.titulo-cursos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-bottom: 12px;
+
+  ion-icon {
+    font-size: 20px;
+  }
+}
+
+.lista-cursos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.curso {
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: var(--ion-color-primary);
+  color: white;
+  font-size: 14px;
+}

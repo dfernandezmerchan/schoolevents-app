@@ -94,11 +94,30 @@
             <span>{{ evento.lugar.nombre }}</span>
           </div>
 
+
+
         </div>
 
         <p class="descripcion">
           {{ evento.descripcion }}
         </p>
+
+        <div class="cursos-evento">
+
+          <div class="titulo-cursos">
+            <ion-icon name="people-outline"></ion-icon>
+            <span>Cursos participantes</span>
+          </div>
+
+          <div class="lista-cursos">
+            @for (curso of evento.cursos; track curso.id) {
+              <span class="curso">
+        {{ curso.nombre }}
+      </span>
+            }
+          </div>
+
+        </div>
 
         @if (!inscrito) {
           <ion-button
