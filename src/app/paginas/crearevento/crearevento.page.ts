@@ -10,6 +10,15 @@ import {
   IonSelectOption, IonTextarea
 } from '@ionic/angular';
 import {HeaderComponent} from "../../componentes/header/header.component";
+import {addIcons} from "ionicons";
+import {
+  addCircleOutline,
+  businessOutline,
+  calendarOutline,
+  documentTextOutline,
+  personOutline,
+  timeOutline
+} from "ionicons/icons";
 
 @Component({
   selector: 'app-crearevento',
@@ -19,7 +28,19 @@ import {HeaderComponent} from "../../componentes/header/header.component";
 })
 export class CreareventoPage implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+    addIcons({
+      calendarOutline,
+      documentTextOutline,
+      timeOutline,
+      businessOutline,
+      personOutline,
+      addCircleOutline
+    });
+
+
+  }
 
   ngOnInit() {
   }

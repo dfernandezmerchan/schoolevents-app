@@ -9,6 +9,8 @@ import {
   IonToggle,
   ToggleCustomEvent
 } from '@ionic/angular';
+import {addIcons} from "ionicons";
+import {informationCircleOutline, logOutOutline, moonOutline, notificationsOutline} from "ionicons/icons";
 
 @Component({
   selector: 'app-perfil',
@@ -17,6 +19,15 @@ import {
   imports: [IonContent, CommonModule, FormsModule, IonRouterLink, RouterLink, IonToggle, IonIcon, IonList, IonItem, IonLabel]
 })
 export class PerfilPage {
+
+  constructor() {
+    addIcons({
+      logOutOutline,
+      informationCircleOutline,
+      notificationsOutline,
+      moonOutline
+    });
+  }
 
   isEditing = false;
 

@@ -13,7 +13,7 @@ import {
 } from '@ionic/angular';
 
 import { addIcons } from 'ionicons';
-import { addOutline } from 'ionicons/icons';
+import {addOutline, searchOutline} from 'ionicons/icons';
 
 import { HeaderComponent } from "../../componentes/header/header.component";
 import { TarjetaeventoComponent } from "../../componentes/tarjetaevento/tarjetaevento.component";
@@ -51,7 +51,8 @@ export class HomePage {
 
   constructor() {
     addIcons({
-      addOutline
+      addOutline,
+      searchOutline
     });
   }
 
